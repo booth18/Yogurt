@@ -1,0 +1,2139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Angle 1.1 | Shortcodes</title>
+
+    <link href="assets/css/main.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/js/all.js" type="text/javascript"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <body class="bs-docs-home shortcodes">
+        <header class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./">Angle</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+                <li>
+                    <a href="getting-started.html">Getting Started</a>
+                </li>
+                
+                <li>
+                    <a href="content.html">Using Angle</a>
+                </li>
+                
+                <li>
+                    <a href="shortcodes.html">Shortcodes</a>
+                </li>
+                
+                <li>
+                    <a href="theme-options.html">Theme Options</a>
+                </li>
+                
+                <li>
+                    <a href="changelog.html">Changelog</a>
+                </li>
+                
+            </ul>
+            <form class="navbar-form navbar-right">
+                <a href="http://www.themeforest.net/item/angle-flat-responsive-bootstrap-multipurpose-theme/6519550&ref=oxygenna" class="btn btn-success"><i class="fa fa-shopping-cart"></i> Purchase</a>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="http://www.youtube.com/playlist?list=PLjEWC37YdOvtVmKEyK86uajI8j2VMmJ7E" target="blank">Video Tutorials</a>
+                </li>
+                <li>
+                    <a href="http://oxygenna.ticksy.com" target="blank">Get Support</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        <div class="bs-header" id="content">
+    <div class="container">
+        <h1>Shortcodes</h1>
+        <p>All the Angle shortcodes </p>
+    </div>
+</div>
+<div id="online-docs-warning" class="alert alert-info text-center">
+    <div class="container">
+        <strong>Online Docs Available</strong>
+        Looks like you are looking at the offline docs.  You can find possibly more up to date docs <a href="http://angledocs.oxygenna.com">online here</a>
+    </div>
+</div>
+<div class="container bs-docs-container">
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="bs-sidebar hidden-print affix-top" role="complementary">
+                <ul class="nav bs-sidenav">
+    
+    <li>
+        <a href="#row">Row</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#column">Column</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#heading">Heading</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#services">Services</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#testimonials">Testimonials</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#staff-list">Staff List</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#featured-staff">Featured Staff</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#portfolio">Portfolio</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#recent-posts">Recent Posts</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#google-map">Google Map</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#pie-chart">Pie Chart</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#counter">Counter</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#pricing-column">Pricing Column</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#feature">Feature</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#slideshow">Slideshow</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#image">Image</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#shaped-image">Shaped Image</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#featured-icon">Featured Icon</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#icon">Icon</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#button">Button</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#fancy-button">Fancy Button</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#alert">Alert</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#panel">Panel</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#progress-bar">Progress Bar</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#lead-paragraph">Lead Paragraph</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#blockquote">Blockquote</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#code">Code</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#countdown-timer">Countdown Timer</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+</ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="bs-docs-section">
+                <h1 id="row">Row</h1>
+<p>A Horizontal section to add content to.</p>
+
+<h4 id="full-example">Full Example</h4>
+
+<pre><code>[vc_row title="" subtitle="" title_size="normal" title_weight="regular" title_align="center" title_underline="no-underline" swatch="swatch-white-red" top_decoration="none" bottom_decoration="none" height="normal" width="padded" class="" id="" background_image="" background_video="" overlay_colour="#000000" overlay_opacity="0" overlay_grid="off" background_image_size="cover" background_image_repeat="no-repeat" background_image_attachment="scroll"] content goes here [/vc_row]
+</code></pre>
+
+<h4 id="options">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>title</td>
+    <td>
+        Main Title text            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>subtitle</td>
+    <td>
+        Smaller subtitle to be shown under the main title text.            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>title_size</td>
+    <td>
+        Choose size of the font to use in your header        <br /><strong>options : </strong><code style="white-space: normal;">normal, super, hyper</code>    </td>
+    <td>normal</td>
+</tr>
+<tr>
+    <td>title_weight</td>
+    <td>
+        Choose weight of the font to use in the title        <br /><strong>options : </strong><code style="white-space: normal;">regular, black, bold, light, hairline</code>    </td>
+    <td>regular</td>
+</tr>
+<tr>
+    <td>title_align</td>
+    <td>
+        Align the text shown in the header left, right or center.        <br /><strong>options : </strong><code style="white-space: normal;">center, left, right</code>    </td>
+    <td>center</td>
+</tr>
+<tr>
+    <td>title_underline</td>
+    <td>
+        Adds an underline effect below the title &amp; subtitle.        <br /><strong>options : </strong><code style="white-space: normal;">underline, no-underline</code>    </td>
+    <td>no-underline</td>
+</tr>
+<tr>
+    <td>swatch</td>
+    <td>
+        Choose a color swatch for the section            </td>
+    <td>swatch-white-red</td>
+</tr>
+<tr>
+    <td>top_decoration</td>
+    <td>
+        Choose a style to use as the top decoration.        <br /><strong>options : </strong><code style="white-space: normal;">none, arrow, circle, clouds, cross, curtain, left-slope, right-slope, lines, rounded, rounded-inverted, triangle, triangle-inverted, zig-zag, zipper</code>    </td>
+    <td>none</td>
+</tr>
+<tr>
+    <td>bottom_decoration</td>
+    <td>
+        Choose a style to use as the bottom decoration.        <br /><strong>options : </strong><code style="white-space: normal;">none, arrow, circle, clouds, cross, curtain, left-slope, right-slope, lines, rounded, rounded-inverted, triangle, triangle-inverted, zig-zag, zipper</code>    </td>
+    <td>none</td>
+</tr>
+<tr>
+    <td>content</td>
+    <td>
+                    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>height</td>
+    <td>
+        Choose the amount of padding added to the height of this section        <br /><strong>options : </strong><code style="white-space: normal;">normal, short, tiny, nopadding</code>    </td>
+    <td>normal</td>
+</tr>
+<tr>
+    <td>width</td>
+    <td>
+        Choose between padded-non padded section        <br /><strong>options : </strong><code style="white-space: normal;">padded, no-padded</code>    </td>
+    <td>padded</td>
+</tr>
+<tr>
+    <td>class</td>
+    <td>
+        Add an optional class to the section            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>id</td>
+    <td>
+        Add an optional id to the section            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>background_image</td>
+    <td>
+        Choose an image to use for this rows background.            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>background_video</td>
+    <td>
+        Enter url of a video to use for this rows background.            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>overlay_colour</td>
+    <td>
+        Set the colour of the video &amp; image overlay            </td>
+    <td>#000000</td>
+</tr>
+<tr>
+    <td>overlay_opacity</td>
+    <td>
+        Set the opacity of the video &amp; image overlay            </td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>overlay_grid</td>
+    <td>
+        Adds an overlay pattern image        <br /><strong>options : </strong><code style="white-space: normal;">off, on</code>    </td>
+    <td>off</td>
+</tr>
+<tr>
+    <td>background_image_size</td>
+    <td>
+        Set how the image will fit into the section        <br /><strong>options : </strong><code style="white-space: normal;">cover, auto</code>    </td>
+    <td>cover</td>
+</tr>
+<tr>
+    <td>background_image_repeat</td>
+    <td>
+        Set how the image will be repeated        <br /><strong>options : </strong><code style="white-space: normal;">no-repeat, repeat-x, repeat-y, repeat</code>    </td>
+    <td>no-repeat</td>
+</tr>
+<tr>
+    <td>background_image_attachment</td>
+    <td>
+        Set the way the background scrolls with the page. Scroll = normal Fixed = Parallax effect.        <br /><strong>options : </strong><code style="white-space: normal;">scroll, fixed</code>    </td>
+    <td>scroll</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="column">Column</h1>
+<p>Column shortcode for use inside a row.</p>
+
+<h4 id="full-example-1">Full Example</h4>
+
+<pre><code>[vc_column align="default" extra_classes=""] content goes here [/vc_column]
+</code></pre>
+
+<h4 id="options-1">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>align</td>
+    <td>
+        Sets the alignment items in the column.        <br /><strong>options : </strong><code style="white-space: normal;">Default, left, center, right</code>    </td>
+    <td>default</td>
+</tr>
+<tr>
+    <td>extra_classes</td>
+    <td>
+        Add any extra classes you need to add to this column. ( space separated )            </td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="heading">Heading</h1>
+<p>Creates a heading tag H1-H6</p>
+
+<h4 id="full-example-2">Full Example</h4>
+
+<pre><code>[heading header_type="h1" header_size="normal" header_weight="regular" header_align="center" header_underline="bordered-header"] content goes here [/heading]
+</code></pre>
+
+<h4 id="options-2">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>content</td>
+    <td>
+        Header text            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>header_type</td>
+    <td>
+        Choose the type of header you want to use        <br /><strong>options : </strong><code style="white-space: normal;">h1, h2, h3, h4, h5, h6</code>    </td>
+    <td>h1</td>
+</tr>
+<tr>
+    <td>header_size</td>
+    <td>
+        Choose size of the font to use in your header        <br /><strong>options : </strong><code style="white-space: normal;">normal, super, hyper</code>    </td>
+    <td>normal</td>
+</tr>
+<tr>
+    <td>header_weight</td>
+    <td>
+        Choose weight of the font to use in the header        <br /><strong>options : </strong><code style="white-space: normal;">regular, black, bold, light, hairline</code>    </td>
+    <td>regular</td>
+</tr>
+<tr>
+    <td>header_align</td>
+    <td>
+        Align the text shown in the header left, right or center.        <br /><strong>options : </strong><code style="white-space: normal;">center, left, right</code>    </td>
+    <td>center</td>
+</tr>
+<tr>
+    <td>header_underline</td>
+    <td>
+        Adds an underline effect below the header.        <br /><strong>options : </strong><code style="white-space: normal;">bordered-header, no-bordered-header</code>    </td>
+    <td>bordered-header</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="services">Services</h1>
+<p>Displays a horizontal / vertical list of services.</p>
+
+<h4 id="full-example-3">Full Example</h4>
+
+<pre><code>[services category="" count="3" style="horizontal" columns="3" image_shape="round" image_size="big" image_shadow="hide" connected="show" show_titles="show" link_titles="on" show_images="show" link_images="on" show_excerpts="show" align_excerpts="center" show_readmores="show" readmore_text="Read more"]
+</code></pre>
+
+<h4 id="options-3">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>category</td>
+    <td>
+        Category of services to show            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>count</td>
+    <td>
+        Number of services to show            </td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>style</td>
+    <td>
+        Services will be shown horizontallly or vertically on the page.        <br /><strong>options : </strong><code style="white-space: normal;">horizontal, vertical</code>    </td>
+    <td>horizontal</td>
+</tr>
+<tr>
+    <td>columns</td>
+    <td>
+        Number of columns to show the services in        <br /><strong>options : </strong><code style="white-space: normal;">2, 3, 4, 6</code>    </td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>image_shape</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">round, square, rect, hex</code>    </td>
+    <td>round</td>
+</tr>
+<tr>
+    <td>image_size</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">big, huge, normal, medium, small</code>    </td>
+    <td>big</td>
+</tr>
+<tr>
+    <td>image_shadow</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>hide</td>
+</tr>
+<tr>
+    <td>connected</td>
+    <td>
+        Services will be connected with a dotted line.        <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>show_titles</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>link_titles</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">on, off</code>    </td>
+    <td>on</td>
+</tr>
+<tr>
+    <td>show_images</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>link_images</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">on, off</code>    </td>
+    <td>on</td>
+</tr>
+<tr>
+    <td>show_excerpts</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>align_excerpts</td>
+    <td>
+        Sets the text alignment of the excerpt text and the read more link.        <br /><strong>options : </strong><code style="white-space: normal;">left, center, right</code>    </td>
+    <td>center</td>
+</tr>
+<tr>
+    <td>show_readmores</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>readmore_text</td>
+    <td>
+        Customize your readmore link            </td>
+    <td>Read more</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="testimonials">Testimonials</h1>
+<p>Displays a list / slideshow of testimonials.</p>
+
+<h4 id="full-example-4">Full Example</h4>
+
+<pre><code>[testimonials group="" count="3" show_image="show" slideshow="on"]
+</code></pre>
+
+<h4 id="options-4">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>group</td>
+    <td>
+        Group of testimonials to show            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>count</td>
+    <td>
+        Number of Testimonials to display            </td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>show_image</td>
+    <td>
+        Display the featured image as avatar        <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>slideshow</td>
+    <td>
+        Display the testimonials as a slideshow        <br /><strong>options : </strong><code style="white-space: normal;">on, off</code>    </td>
+    <td>on</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="staff-list">Staff List</h1>
+<p>Displays a list of staff members in columns.</p>
+
+<h4 id="full-example-5">Full Example</h4>
+
+<pre><code>[staff_list department="" count="3" columns="3" image_shape="round" image_size="big" image_shadow="hide" link_name="on" show_name="show" show_excerpts="show" align_excerpts="center" show_social="show" link_target="_self"]
+</code></pre>
+
+<h4 id="options-5">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>department</td>
+    <td>
+        Populate your list from a department            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>count</td>
+    <td>
+        Number of members to display            </td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>columns</td>
+    <td>
+        Number of columns to show staff in        <br /><strong>options : </strong><code style="white-space: normal;">2, 3, 4, 6</code>    </td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>image_shape</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">round, square, rect, hex</code>    </td>
+    <td>round</td>
+</tr>
+<tr>
+    <td>image_size</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">big, huge, normal, medium, small</code>    </td>
+    <td>big</td>
+</tr>
+<tr>
+    <td>image_shadow</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>hide</td>
+</tr>
+<tr>
+    <td>link_name</td>
+    <td>
+        Make the name link to the url specified in staff page        <br /><strong>options : </strong><code style="white-space: normal;">on, off</code>    </td>
+    <td>on</td>
+</tr>
+<tr>
+    <td>show_name</td>
+    <td>
+        Display the staff position below the name        <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>show_excerpts</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>align_excerpts</td>
+    <td>
+        Sets the text alignment of the excerpt text and the read more link.        <br /><strong>options : </strong><code style="white-space: normal;">left, center, right</code>    </td>
+    <td>center</td>
+</tr>
+<tr>
+    <td>show_social</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>link_target</td>
+    <td>
+        Where the social links open to        <br /><strong>options : </strong><code style="white-space: normal;">_self, _blank, _parent, _top</code>    </td>
+    <td>_self</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="featured-staff">Featured Staff</h1>
+<p>Displays a featured section about one member of staff.</p>
+
+<h4 id="full-example-6">Full Example</h4>
+
+<pre><code>[staff_featured member="" image_shape="round" image_size="big" image_shadow="hide" show_position="show" show_content="show" content_size="big" align_content="center" show_social="show" link_target="_self"]
+</code></pre>
+
+<h4 id="options-6">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>member</td>
+    <td>
+        Select the staff member that will be featured            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>image_shape</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">round, square, rect, hex</code>    </td>
+    <td>round</td>
+</tr>
+<tr>
+    <td>image_size</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">big, huge, normal, medium, small</code>    </td>
+    <td>big</td>
+</tr>
+<tr>
+    <td>image_shadow</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>hide</td>
+</tr>
+<tr>
+    <td>show_position</td>
+    <td>
+        Display the staff position below the name        <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>show_content</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>content_size</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">big, small</code>    </td>
+    <td>big</td>
+</tr>
+<tr>
+    <td>align_content</td>
+    <td>
+        Sets the text alignment of the excerpt text and the read more link.        <br /><strong>options : </strong><code style="white-space: normal;">left, center, right</code>    </td>
+    <td>center</td>
+</tr>
+<tr>
+    <td>show_social</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>link_target</td>
+    <td>
+        Where the social links open to        <br /><strong>options : </strong><code style="white-space: normal;">_self, _blank, _parent, _top</code>    </td>
+    <td>_self</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="portfolio">Portfolio</h1>
+<p>Displays a set of portfolio items in columns.</p>
+
+<h4 id="full-example-7">Full Example</h4>
+
+<pre><code>[portfolio categories="" count="3" columns="3" pagination="off" shape="round" show_shadow="show" show_title="show" show_excerpt="show" show_overlay="show" show_magnific="show" show_filters="show"]
+</code></pre>
+
+<h4 id="options-7">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>categories</td>
+    <td>
+        Categories to show (leave blank to show all)            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>count</td>
+    <td>
+        Number of portfolio items to display(per page)            </td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>columns</td>
+    <td>
+        Number of columns to show the portfolio in            </td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>pagination</td>
+    <td>
+        Split your portfolio items in pages        <br /><strong>options : </strong><code style="white-space: normal;">off, simple, infinite</code>    </td>
+    <td>off</td>
+</tr>
+<tr>
+    <td>shape</td>
+    <td>
+        Choose the portfolio image shape        <br /><strong>options : </strong><code style="white-space: normal;">round, square, rect, hex</code>    </td>
+    <td>round</td>
+</tr>
+<tr>
+    <td>show_shadow</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>show_title</td>
+    <td>
+        Display the portfolio title        <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>show_excerpt</td>
+    <td>
+        Display the portfolio excerpt        <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>show_overlay</td>
+    <td>
+        Show overlay on hover        <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>show_magnific</td>
+    <td>
+        Open portfolio links in Magnific popup when overlay is hidden        <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>show_filters</td>
+    <td>
+        Show filter navigation        <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="recent-posts">Recent Posts</h1>
+<p>Displays a list of recent posts.</p>
+
+<h4 id="full-example-8">Full Example</h4>
+
+<pre><code>[recent_posts layout="simple" pagination="on" count="3" cat="" post_swatch="swatch-red-white" columns="3" infinite_scroll="on"]
+</code></pre>
+
+<h4 id="options-8">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>layout</td>
+    <td>
+        Section Layout        <br /><strong>options : </strong><code style="white-space: normal;">simple, slideshow, masonry</code>    </td>
+    <td>simple</td>
+</tr>
+<tr>
+    <td>pagination</td>
+    <td>
+        Toggle Pagination on/off        <br /><strong>options : </strong><code style="white-space: normal;">on, off</code>    </td>
+    <td>on</td>
+</tr>
+<tr>
+    <td>count</td>
+    <td>
+        Number of posts to display per page ( if pagination is on ) or total number of posts ( if pagination is off/slideshow )            </td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>cat</td>
+    <td>
+        Choose posts from a specific category            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>post_swatch</td>
+    <td>
+        Choose a color swatch for the posts            </td>
+    <td>swatch-red-white</td>
+</tr>
+<tr>
+    <td>columns</td>
+    <td>
+        Number of columns to show posts in        <br /><strong>options : </strong><code style="white-space: normal;">1, 2, 3, 4</code>    </td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>infinite_scroll</td>
+    <td>
+        pagination is not displayed in masonry if infinite scrolling is on        <br /><strong>options : </strong><code style="white-space: normal;">on, off</code>    </td>
+    <td>on</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="google-map">Google Map</h1>
+<p>Adds a Google Map to the page.</p>
+
+<h4 id="full-example-9">Full Example</h4>
+
+<pre><code>[map map_type="ROADMAP" map_zoom="15" map_style="flat" marker="show" address="" lat="" lng="" height="500"]
+</code></pre>
+
+<h4 id="options-9">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>map_type</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">ROADMAP, SATELLITE, TERRAIN, HYBRID</code>    </td>
+    <td>ROADMAP</td>
+</tr>
+<tr>
+    <td>map_zoom</td>
+    <td>
+                    </td>
+    <td>15</td>
+</tr>
+<tr>
+    <td>map_style</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">flat, regular</code>    </td>
+    <td>flat</td>
+</tr>
+<tr>
+    <td>marker</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">hide, show</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>address</td>
+    <td>
+        Address to show marker            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>lat</td>
+    <td>
+        Latitude of marker (if you dont want to use address)            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>lng</td>
+    <td>
+        Longitude of marker (if you dont want to use address)            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>height</td>
+    <td>
+                    </td>
+    <td>500</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="pie-chart">Pie Chart</h1>
+<p>Creates a circular chart to show a % value.</p>
+
+<h4 id="full-example-10">Full Example</h4>
+
+<pre><code>[pie track_colour="" bar_colour="" icon="" icon_animation="none" percentage="50" size="200" line_width="20"]
+</code></pre>
+
+<h4 id="options-10">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>track_colour</td>
+    <td>
+        Choose the chart track colour            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>bar_colour</td>
+    <td>
+        Choose the chart bar colour            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>icon</td>
+    <td>
+        Choose a chart icon            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>icon_animation</td>
+    <td>
+        Choose an icon animation        <br /><strong>options : </strong><code style="white-space: normal;">none, bounce, bounceIn, bounceInDown, bounceInLeft, bounceInRight, bounceInUp, bounceOut, bounceOutDown, bounceOutLeft, bounceOutRight, bounceOutUp, fadeIn, fadeInDown, fadeInDownBig, fadeInLeft, fadeInLeftBig, fadeInRight, fadeInRightBig, fadeInUp, fadeInUpBig, fadeOut, fadeOutDown, fadeOutDownBig, fadeOutLeft, fadeOutLeftBig, fadeOutRight, fadeOutRightBig, fadeOutUp, fadeOutUpBig, flash, flip, flipInX, flipInY, flipOutX, flipOutY, hinge, lightSpeedIn, lightSpeedOut, pulse, rollIn, rollOut, rotateIn, rotateInDownLeft, rotateInDownRight, rotateInUpLeft, rotateInUpRight, rotateOut, rotateOutDownLeft, rotateOutDownRight, rotateOutUpLeft, rotateOutUpRight, shake, swing, tada, wiggle, wobble</code>    </td>
+    <td>none</td>
+</tr>
+<tr>
+    <td>percentage</td>
+    <td>
+        Percentage of the pie chart            </td>
+    <td>50</td>
+</tr>
+<tr>
+    <td>size</td>
+    <td>
+        Set the size of the chart            </td>
+    <td>200</td>
+</tr>
+<tr>
+    <td>line_width</td>
+    <td>
+        Set the width of the charts line            </td>
+    <td>20</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="counter">Counter</h1>
+<p>Creates a circular counter to show an integer value.</p>
+
+<h4 id="full-example-11">Full Example</h4>
+
+<pre><code>[counter value="" counter_size="normal" counter_weight="regular" underline="underline"]
+</code></pre>
+
+<h4 id="options-11">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>value</td>
+    <td>
+        Value of the circular counter            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>counter_size</td>
+    <td>
+        Choose the size of the font to use in the counter        <br /><strong>options : </strong><code style="white-space: normal;">normal, super, hyper</code>    </td>
+    <td>normal</td>
+</tr>
+<tr>
+    <td>counter_weight</td>
+    <td>
+        Choose the weight of the font to use in the counter        <br /><strong>options : </strong><code style="white-space: normal;">regular, black, bold, light, hairline</code>    </td>
+    <td>regular</td>
+</tr>
+<tr>
+    <td>underline</td>
+    <td>
+        Underline the number.        <br /><strong>options : </strong><code style="white-space: normal;">underline, no-underline</code>    </td>
+    <td>underline</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="pricing-column">Pricing Column</h1>
+<p>Displays a price info column.</p>
+
+<h4 id="full-example-12">Full Example</h4>
+
+<pre><code>[pricing heading="" featured="false" show_price="true" price="" currency="&amp;#36;" custom_currency="" per="" list="" show_button="true" button_text="" button_link=""]
+</code></pre>
+
+<h4 id="options-12">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>heading</td>
+    <td>
+        Heading text of the column            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>featured</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">false, true</code>    </td>
+    <td>false</td>
+</tr>
+<tr>
+    <td>show_price</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">true, false</code>    </td>
+    <td>true</td>
+</tr>
+<tr>
+    <td>price</td>
+    <td>
+        Price to show at top of the column.            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>currency</td>
+    <td>
+        Price currency to show next to the price.        <br /><strong>options : </strong><code style="white-space: normal;">&#36;, &#128;, &#163;, &#165;, custom</code>    </td>
+    <td>&#36;</td>
+</tr>
+<tr>
+    <td>custom_currency</td>
+    <td>
+        If custom currency selected enter the html code here. e.g. <code>&#8359;</code>            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>per</td>
+    <td>
+        Text to show after the price.            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>list</td>
+    <td>
+        List of items to put in the column under the price. Divide categories with linebreaks (Enter)            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>show_button</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">true, false</code>    </td>
+    <td>true</td>
+</tr>
+<tr>
+    <td>button_text</td>
+    <td>
+        Text to inside the button at the bottom of the column.            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>button_link</td>
+    <td>
+        Link that the button will point to.            </td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="feature">Feature</h1>
+<p>Displays a shape with an icon alongside some text.</p>
+
+<h4 id="full-example-13">Full Example</h4>
+
+<pre><code>[feature show_icon="true" icon="glass" shape="round" animation="" title=""]
+</code></pre>
+
+<h4 id="options-13">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>show_icon</td>
+    <td>
+        Show / Hide the icon on the left.        <br /><strong>options : </strong><code style="white-space: normal;">true, false</code>    </td>
+    <td>true</td>
+</tr>
+<tr>
+    <td>icon</td>
+    <td>
+        Choose an icon to use in your featured icon            </td>
+    <td>glass</td>
+</tr>
+<tr>
+    <td>shape</td>
+    <td>
+        Set shape used for the icon.        <br /><strong>options : </strong><code style="white-space: normal;">square, round, hex</code>    </td>
+    <td>round</td>
+</tr>
+<tr>
+    <td>animation</td>
+    <td>
+        Choose an icon animation        <br /><strong>options : </strong><code style="white-space: normal;">none, bounce, bounceIn, bounceInDown, bounceInLeft, bounceInRight, bounceInUp, bounceOut, bounceOutDown, bounceOutLeft, bounceOutRight, bounceOutUp, fadeIn, fadeInDown, fadeInDownBig, fadeInLeft, fadeInLeftBig, fadeInRight, fadeInRightBig, fadeInUp, fadeInUpBig, fadeOut, fadeOutDown, fadeOutDownBig, fadeOutLeft, fadeOutLeftBig, fadeOutRight, fadeOutRightBig, fadeOutUp, fadeOutUpBig, flash, flip, flipInX, flipInY, flipOutX, flipOutY, hinge, lightSpeedIn, lightSpeedOut, pulse, rollIn, rollOut, rotateIn, rotateInDownLeft, rotateInDownRight, rotateInUpLeft, rotateInUpRight, rotateOut, rotateOutDownLeft, rotateOutDownRight, rotateOutUpLeft, rotateOutUpRight, shake, swing, tada, wiggle, wobble</code>    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>title</td>
+    <td>
+        Choose a title for your featured item.            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>content</td>
+    <td>
+        Content to show below title.            </td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="slideshow">Slideshow</h1>
+<p>Adds a Flexslider slideshow to the page.</p>
+
+<h4 id="full-example-14">Full Example</h4>
+
+<pre><code>[slideshow flexslider="" animation="slide" speed="7000" duration="600" autostart="true" directionnav="hide" directionnavtype="simple" itemwidth="" showcontrols="show" controlsposition="inside" controlsalign="center" captions="show" captions_vertical="bottom" captions_horizontal="left" tooltip="hide"]
+</code></pre>
+
+<h4 id="options-14">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>flexslider</td>
+    <td>
+        Populate your slider with one of the slideshows you created            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>animation</td>
+    <td>
+        Select how your slider animates        <br /><strong>options : </strong><code style="white-space: normal;">slide, fade</code>    </td>
+    <td>slide</td>
+</tr>
+<tr>
+    <td>speed</td>
+    <td>
+        Set the speed of the slideshow cycling, in milliseconds            </td>
+    <td>7000</td>
+</tr>
+<tr>
+    <td>duration</td>
+    <td>
+        Set the speed of animations            </td>
+    <td>600</td>
+</tr>
+<tr>
+    <td>autostart</td>
+    <td>
+        Start slideshow automatically        <br /><strong>options : </strong><code style="white-space: normal;">true, false</code>    </td>
+    <td>true</td>
+</tr>
+<tr>
+    <td>directionnav</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>hide</td>
+</tr>
+<tr>
+    <td>directionnavtype</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">simple, fancy</code>    </td>
+    <td>simple</td>
+</tr>
+<tr>
+    <td>itemwidth</td>
+    <td>
+        Set width of the slider items( leave blank for full )            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>showcontrols</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>controlsposition</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">inside, outside</code>    </td>
+    <td>inside</td>
+</tr>
+<tr>
+    <td>controlsalign</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">center, left, right</code>    </td>
+    <td>center</td>
+</tr>
+<tr>
+    <td>captions</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>captions_vertical</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">top, bottom</code>    </td>
+    <td>bottom</td>
+</tr>
+<tr>
+    <td>captions_horizontal</td>
+    <td>
+        Choose among left, right and alternate positioning        <br /><strong>options : </strong><code style="white-space: normal;">left, right, alternate</code>    </td>
+    <td>left</td>
+</tr>
+<tr>
+    <td>tooltip</td>
+    <td>
+        Show tooltip        <br /><strong>options : </strong><code style="white-space: normal;">show, hide</code>    </td>
+    <td>hide</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="image">Image</h1>
+<p>Displays an image.</p>
+
+<h4 id="full-example-15">Full Example</h4>
+
+<pre><code>[image images="" size="medium" align="none" alt="" link=""]
+</code></pre>
+
+<h4 id="options-15">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>images</td>
+    <td>
+        Place the source path of the image here            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>size</td>
+    <td>
+        Choose the size that the image will have        <br /><strong>options : </strong><code style="white-space: normal;">thumbnail, medium, large, full</code>    </td>
+    <td>medium</td>
+</tr>
+<tr>
+    <td>align</td>
+    <td>
+        Sets the text alignment of the image.        <br /><strong>options : </strong><code style="white-space: normal;">none, left, center, right</code>    </td>
+    <td>none</td>
+</tr>
+<tr>
+    <td>alt</td>
+    <td>
+        Place the alt of the image here            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>link</td>
+    <td>
+        Place a link here            </td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="shaped-image">Shaped Image</h1>
+<p>Displays an image that is clipped to a shape.</p>
+
+<h4 id="full-example-16">Full Example</h4>
+
+<pre><code>[shapedimage images="" shape_size="medium" shape="round" shape_shadow="show" align="none" animation="none" magnific="off" alt="" link=""]
+</code></pre>
+
+<h4 id="options-16">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>images</td>
+    <td>
+        Place the source path of the image here            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>shape_size</td>
+    <td>
+        Choose the size that the image will have        <br /><strong>options : </strong><code style="white-space: normal;">small, medium, normal, big, huge</code>    </td>
+    <td>medium</td>
+</tr>
+<tr>
+    <td>shape</td>
+    <td>
+        Choose if the image will be roundrd or not        <br /><strong>options : </strong><code style="white-space: normal;">rect, square, round, hex</code>    </td>
+    <td>round</td>
+</tr>
+<tr>
+    <td>shape_shadow</td>
+    <td>
+                <br /><strong>options : </strong><code style="white-space: normal;">hide, show</code>    </td>
+    <td>show</td>
+</tr>
+<tr>
+    <td>align</td>
+    <td>
+        Sets the text alignment of the image.        <br /><strong>options : </strong><code style="white-space: normal;">none, left, center, right</code>    </td>
+    <td>none</td>
+</tr>
+<tr>
+    <td>animation</td>
+    <td>
+        Choose a hover animation        <br /><strong>options : </strong><code style="white-space: normal;">none, bounce, bounceIn, bounceInDown, bounceInLeft, bounceInRight, bounceInUp, bounceOut, bounceOutDown, bounceOutLeft, bounceOutRight, bounceOutUp, fadeIn, fadeInDown, fadeInDownBig, fadeInLeft, fadeInLeftBig, fadeInRight, fadeInRightBig, fadeInUp, fadeInUpBig, fadeOut, fadeOutDown, fadeOutDownBig, fadeOutLeft, fadeOutLeftBig, fadeOutRight, fadeOutRightBig, fadeOutUp, fadeOutUpBig, flash, flip, flipInX, flipInY, flipOutX, flipOutY, hinge, lightSpeedIn, lightSpeedOut, pulse, rollIn, rollOut, rotateIn, rotateInDownLeft, rotateInDownRight, rotateInUpLeft, rotateInUpRight, rotateOut, rotateOutDownLeft, rotateOutDownRight, rotateOutUpLeft, rotateOutUpRight, shake, swing, tada, wiggle, wobble</code>    </td>
+    <td>none</td>
+</tr>
+<tr>
+    <td>magnific</td>
+    <td>
+        Open the original image in magnific on click (overrides link option)        <br /><strong>options : </strong><code style="white-space: normal;">on, off</code>    </td>
+    <td>off</td>
+</tr>
+<tr>
+    <td>alt</td>
+    <td>
+        Place the alt of the image here            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>link</td>
+    <td>
+        Place a link here            </td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="featured-icon">Featured Icon</h1>
+<p>Creates a shape with an icon in the middle.</p>
+
+<h4 id="full-example-17">Full Example</h4>
+
+<pre><code>[featuredicon icon="glass" shape_size="medium" shape="round" animation="" shape_shadow="show"]
+</code></pre>
+
+<h4 id="options-17">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>icon</td>
+    <td>
+        Choose an icon to use in your featured icon            </td>
+    <td>glass</td>
+</tr>
+<tr>
+    <td>shape_size</td>
+    <td>
+        Choose the size that the image will have        <br /><strong>options : </strong><code style="white-space: normal;">small, medium, normal, big, huge</code>    </td>
+    <td>medium</td>
+</tr>
+<tr>
+    <td>shape</td>
+    <td>
+        Choose if the image will be roundrd or not        <br /><strong>options : </strong><code style="white-space: normal;">rect, square, round, hex</code>    </td>
+    <td>round</td>
+</tr>
+<tr>
+    <td>animation</td>
+    <td>
+        Choose an icon animation        <br /><strong>options : </strong><code style="white-space: normal;">none, bounce, bounceIn, bounceInDown, bounceInLeft, bounceInRight, bounceInUp, bounceOut, bounceOutDown, bounceOutLeft, bounceOutRight, bounceOutUp, fadeIn, fadeInDown, fadeInDownBig, fadeInLeft, fadeInLeftBig, fadeInRight, fadeInRightBig, fadeInUp, fadeInUpBig, fadeOut, fadeOutDown, fadeOutDownBig, fadeOutLeft, fadeOutLeftBig, fadeOutRight, fadeOutRightBig, fadeOutUp, fadeOutUpBig, flash, flip, flipInX, flipInY, flipOutX, flipOutY, hinge, lightSpeedIn, lightSpeedOut, pulse, rollIn, rollOut, rotateIn, rotateInDownLeft, rotateInDownRight, rotateInUpLeft, rotateInUpRight, rotateOut, rotateOutDownLeft, rotateOutDownRight, rotateOutUpLeft, rotateOutUpRight, shake, swing, tada, wiggle, wobble</code>    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>shape_shadow</td>
+    <td>
+        Shows a shadow below the shape.        <br /><strong>options : </strong><code style="white-space: normal;">hide, show</code>    </td>
+    <td>show</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="icon">Icon</h1>
+<p>Displays a Font Awesome icon.</p>
+
+<h4 id="full-example-18">Full Example</h4>
+
+<pre><code>[icon size="16"]
+</code></pre>
+
+<h4 id="options-18">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>size</td>
+    <td>
+        Size of font to use for icon ( set to 0 to inhertit font size from container )            </td>
+    <td>16</td>
+</tr>
+<tr>
+    <td>content</td>
+    <td>
+        Type of button to display            </td>
+    <td>glass</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="button">Button</h1>
+<p>Adds a Bootstrap button to the page.</p>
+
+<h4 id="full-example-19">Full Example</h4>
+
+<pre><code>[button type="default" size="normal" title="My button" link="" xclass="" link_open="_self" show_icon="no-icon" icon=""]
+</code></pre>
+
+<h4 id="options-19">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>type</td>
+    <td>
+        Type of button to display        <br /><strong>options : </strong><code style="white-space: normal;">default, primary, info, success, warning, danger, link</code>    </td>
+    <td>default</td>
+</tr>
+<tr>
+    <td>size</td>
+    <td>
+        Size of button to display        <br /><strong>options : </strong><code style="white-space: normal;">normal, lg, sm, xs</code>    </td>
+    <td>normal</td>
+</tr>
+<tr>
+    <td>title</td>
+    <td>
+        Add a label to the button            </td>
+    <td>My button</td>
+</tr>
+<tr>
+    <td>link</td>
+    <td>
+        Where the button links to            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>xclass</td>
+    <td>
+        Add an extra class to the button            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>link_open</td>
+    <td>
+        Where the button link opens to        <br /><strong>options : </strong><code style="white-space: normal;">_self, _blank, _parent, _top</code>    </td>
+    <td>_self</td>
+</tr>
+<tr>
+    <td>show_icon</td>
+    <td>
+        Use an icon in this button        <br /><strong>options : </strong><code style="white-space: normal;">no-icon, left, right</code>    </td>
+    <td>no-icon</td>
+</tr>
+<tr>
+    <td>icon</td>
+    <td>
+        Type of button to display            </td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="fancy-button">Fancy Button</h1>
+<p>Creates a fancy call to action button with an icon.</p>
+
+<h4 id="full-example-20">Full Example</h4>
+
+<pre><code>[fancybutton type="default" size="normal" align="center" label="My button" link="" xclass="" link_open="_self" icon_position="left" animation="none" icon=""]
+</code></pre>
+
+<h4 id="options-20">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>type</td>
+    <td>
+        Type of button to display        <br /><strong>options : </strong><code style="white-space: normal;">default, primary, info, success, warning, danger</code>    </td>
+    <td>default</td>
+</tr>
+<tr>
+    <td>size</td>
+    <td>
+        Size of button to display        <br /><strong>options : </strong><code style="white-space: normal;">normal, lg</code>    </td>
+    <td>normal</td>
+</tr>
+<tr>
+    <td>align</td>
+    <td>
+        Align the button.        <br /><strong>options : </strong><code style="white-space: normal;">left, center, right</code>    </td>
+    <td>center</td>
+</tr>
+<tr>
+    <td>label</td>
+    <td>
+        Add a label to the button            </td>
+    <td>My button</td>
+</tr>
+<tr>
+    <td>link</td>
+    <td>
+        Where the button links to            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>xclass</td>
+    <td>
+        Add an extra class to the button            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>link_open</td>
+    <td>
+        Where the button link opens to        <br /><strong>options : </strong><code style="white-space: normal;">_self, _blank, _parent, _top</code>    </td>
+    <td>_self</td>
+</tr>
+<tr>
+    <td>icon_position</td>
+    <td>
+        Which side of the button to show the icon.        <br /><strong>options : </strong><code style="white-space: normal;">left, right</code>    </td>
+    <td>left</td>
+</tr>
+<tr>
+    <td>animation</td>
+    <td>
+        Choose an icon animation        <br /><strong>options : </strong><code style="white-space: normal;">none, bounce, bounceIn, bounceInDown, bounceInLeft, bounceInRight, bounceInUp, bounceOut, bounceOutDown, bounceOutLeft, bounceOutRight, bounceOutUp, fadeIn, fadeInDown, fadeInDownBig, fadeInLeft, fadeInLeftBig, fadeInRight, fadeInRightBig, fadeInUp, fadeInUpBig, fadeOut, fadeOutDown, fadeOutDownBig, fadeOutLeft, fadeOutLeftBig, fadeOutRight, fadeOutRightBig, fadeOutUp, fadeOutUpBig, flash, flip, flipInX, flipInY, flipOutX, flipOutY, hinge, lightSpeedIn, lightSpeedOut, pulse, rollIn, rollOut, rotateIn, rotateInDownLeft, rotateInDownRight, rotateInUpLeft, rotateInUpRight, rotateOut, rotateOutDownLeft, rotateOutDownRight, rotateOutUpLeft, rotateOutUpRight, shake, swing, tada, wiggle, wobble</code>    </td>
+    <td>none</td>
+</tr>
+<tr>
+    <td>icon</td>
+    <td>
+        Type of button to display            </td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="alert">Alert</h1>
+<p>Creates a Bootstrap Alert box.</p>
+
+<h4 id="full-example-21">Full Example</h4>
+
+<pre><code>[vc_message color="alert-success" title="Watch Out!" dismissable="false"]
+</code></pre>
+
+<h4 id="options-21">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>color</td>
+    <td>
+        Type of alert to display        <br /><strong>options : </strong><code style="white-space: normal;">alert-success, alert-info, alert-warning, alert-danger</code>    </td>
+    <td>alert-success</td>
+</tr>
+<tr>
+    <td>title</td>
+    <td>
+        The bold text that appears first in the alert            </td>
+    <td>Watch Out!</td>
+</tr>
+<tr>
+    <td>content</td>
+    <td>
+        Main text that will appear in the alert box            </td>
+    <td>Change a few things up and try submitting again.</td>
+</tr>
+<tr>
+    <td>dismissable</td>
+    <td>
+        Defines if the alert can be removed using an x in the corner.        <br /><strong>options : </strong><code style="white-space: normal;">true, false</code>    </td>
+    <td>false</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="panel">Panel</h1>
+<p>Creates a Bootstrap Panel with a title and some content.</p>
+
+<h4 id="full-example-22">Full Example</h4>
+
+<pre><code>[panel title=""]
+</code></pre>
+
+<h4 id="options-22">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>title</td>
+    <td>
+        The title of the panel.            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>content</td>
+    <td>
+        The content of the panel.            </td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="progress-bar">Progress Bar</h1>
+<p>Creates a Bootstrap progress bar with a % value.</p>
+
+<h4 id="full-example-23">Full Example</h4>
+
+<pre><code>[progress percentage="50" type="progress" style="progress-bar-info"]
+</code></pre>
+
+<h4 id="options-23">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>percentage</td>
+    <td>
+        Percentage of the progress bar            </td>
+    <td>50</td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>
+        Type of bar to display        <br /><strong>options : </strong><code style="white-space: normal;">progress, progress progress-striped, progress progress-striped active</code>    </td>
+    <td>progress</td>
+</tr>
+<tr>
+    <td>style</td>
+    <td>
+        Style of bar to display        <br /><strong>options : </strong><code style="white-space: normal;">progress-bar-primary, progress-bar-info, progress-bar-success, progress-bar-warning, progress-bar-danger</code>    </td>
+    <td>progress-bar-info</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="lead-paragraph">Lead Paragraph</h1>
+<p>Adds a lead paragraph, with slightly larger and bolder text.</p>
+
+<h4 id="full-example-24">Full Example</h4>
+
+<pre><code>[lead align="center"]
+</code></pre>
+
+<h4 id="options-24">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>align</td>
+    <td>
+        Sets the text alignment of the lead text.        <br /><strong>options : </strong><code style="white-space: normal;">left, center, right</code>    </td>
+    <td>center</td>
+</tr>
+<tr>
+    <td>content</td>
+    <td>
+        Text to show in the lead text paragraph.            </td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="blockquote">Blockquote</h1>
+<p>Creates a quotation.</p>
+
+<h4 id="full-example-25">Full Example</h4>
+
+<pre><code>[blockquote align="left" who="" cite=""]
+</code></pre>
+
+<h4 id="options-25">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>align</td>
+    <td>
+        Sets the text alignment of the lead text.        <br /><strong>options : </strong><code style="white-space: normal;">left, right</code>    </td>
+    <td>left</td>
+</tr>
+<tr>
+    <td>content</td>
+    <td>
+        Text to show in the quote.            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>who</td>
+    <td>
+        Who said the quote.            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>cite</td>
+    <td>
+        Citation of the quote (i.e the source).            </td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="code">Code</h1>
+<p>For use adding source code to a page.</p>
+
+<h4 id="full-example-26">Full Example</h4>
+
+<pre><code>[code]
+</code></pre>
+
+<h4 id="options-26">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>content</td>
+    <td>
+        Source code to display.            </td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="countdown-timer">Countdown Timer</h1>
+<p>Adds a countdown timer for coming soon pages.</p>
+
+<h4 id="full-example-27">Full Example</h4>
+
+<pre><code>[countdown date="" number_size="normal" number_weight="regular" number_underline="no-underline"]
+</code></pre>
+
+<h4 id="options-27">Options</h4>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>date</td>
+    <td>
+        Date to countdown to in the format YYYY/MM/DD HH:MM.            </td>
+    <td></td>
+</tr>
+<tr>
+    <td>number_size</td>
+    <td>
+        Choose size of the font to use for the countdown numbers.        <br /><strong>options : </strong><code style="white-space: normal;">normal, super, hyper</code>    </td>
+    <td>normal</td>
+</tr>
+<tr>
+    <td>number_weight</td>
+    <td>
+        Choose weight of the font of the countdown numbers.        <br /><strong>options : </strong><code style="white-space: normal;">regular, black, bold, light, hairline</code>    </td>
+    <td>regular</td>
+</tr>
+<tr>
+    <td>number_underline</td>
+    <td>
+        Adds an underline effect below the countdown numbers.        <br /><strong>options : </strong><code style="white-space: normal;">underline, no-underline</code>    </td>
+    <td>no-underline</td>
+</tr>
+</tbody>
+</table>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        <footer class="docs-footer" role="contentinfo">
+    <div class="container">
+        <ul class="bs-masthead-links pull-left">
+            <li class="current-version">
+                Currently v1.1
+            </li>
+            <li>
+                <a href="changelog.html">Changelog</a>
+            </li>
+            <li>
+                <a href="http://themeforest.net/user/oxygenna/portfolio">Our Portfolio</a>
+            </li>
+            <li>
+                <a href="http://www.oxygenna.com/contact/">Contact Us</a>
+            </li>
+        </ul>
+        <ul class="bs-masthead-links pull-right">
+            <li>
+                Made with <i class="fa fa-heart"></i> in Sitia, Greece
+            </li>
+        </ul>
+    </li>
+</footer>
+    </body>
+</html>

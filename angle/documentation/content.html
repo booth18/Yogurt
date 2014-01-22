@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Angle 1.1 | Using Angle</title>
+
+    <link href="assets/css/main.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/js/all.js" type="text/javascript"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <body class="bs-docs-home content">
+        <header class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./">Angle</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+                <li>
+                    <a href="getting-started.html">Getting Started</a>
+                </li>
+                
+                <li>
+                    <a href="content.html">Using Angle</a>
+                </li>
+                
+                <li>
+                    <a href="shortcodes.html">Shortcodes</a>
+                </li>
+                
+                <li>
+                    <a href="theme-options.html">Theme Options</a>
+                </li>
+                
+                <li>
+                    <a href="changelog.html">Changelog</a>
+                </li>
+                
+            </ul>
+            <form class="navbar-form navbar-right">
+                <a href="http://www.themeforest.net/item/angle-flat-responsive-bootstrap-multipurpose-theme/6519550&ref=oxygenna" class="btn btn-success"><i class="fa fa-shopping-cart"></i> Purchase</a>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="http://www.youtube.com/playlist?list=PLjEWC37YdOvtVmKEyK86uajI8j2VMmJ7E" target="blank">Video Tutorials</a>
+                </li>
+                <li>
+                    <a href="http://oxygenna.ticksy.com" target="blank">Get Support</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        <div class="bs-header" id="content">
+    <div class="container">
+        <h1>Using Angle</h1>
+        <p>How to add and setup content in Angle theme </p>
+    </div>
+</div>
+<div id="online-docs-warning" class="alert alert-info text-center">
+    <div class="container">
+        <strong>Online Docs Available</strong>
+        Looks like you are looking at the offline docs.  You can find possibly more up to date docs <a href="http://angledocs.oxygenna.com">online here</a>
+    </div>
+</div>
+<div class="container bs-docs-container">
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="bs-sidebar hidden-print affix-top" role="complementary">
+                <ul class="nav bs-sidenav">
+    
+    <li>
+        <a href="#posts">Posts</a>
+        <ul class="nav">
+            
+            <li><a href="#creating-posts">Creating posts</a></li>
+            
+            <li><a href="#post-types">Post types</a></li>
+            
+            <li><a href="#blog-settings">Blog settings</a></li>
+            
+            <li><a href="#post-sharing">Post sharing</a></li>
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#pages">Pages</a>
+        <ul class="nav">
+            
+            <li><a href="#creating-new-page">Creating new page</a></li>
+            
+            <li><a href="#adding-sections">Adding Sections</a></li>
+            
+            <li><a href="#page-templates">Page templates</a></li>
+            
+            <li><a href="#page-headers">Page Headers</a></li>
+            
+            <li><a href="#page-overrides">Page Overrides</a></li>
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#portfolios">Portfolios</a>
+        <ul class="nav">
+            
+            <li><a href="#adding-portfolio-items">Adding portfolio items</a></li>
+            
+            <li><a href="#portfolio-item-types">Portfolio item types</a></li>
+            
+            <li><a href="#single-portfolio-item-templates">Single Portfolio item templates</a></li>
+            
+            <li><a href="#adding-portfolios-to-a-page">Adding portfolios to a page</a></li>
+            
+            <li><a href="#general-portfolio-settings">General portfolio settings</a></li>
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#services">Services</a>
+        <ul class="nav">
+            
+            <li><a href="#adding-services">Adding Services</a></li>
+            
+            <li><a href="#adding-services-to-a-page">Adding services to a page</a></li>
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#staff-members">Staff members</a>
+        <ul class="nav">
+            
+            <li><a href="#adding-staff-members">Adding Staff members</a></li>
+            
+            <li><a href="#adding-staff-members-to-a-page">Adding staff members to a page</a></li>
+            
+            <li><a href="#adding-featured-staff-member-to-a-page">Adding featured staff member to a page</a></li>
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#slideshows">Slideshows</a>
+        <ul class="nav">
+            
+            <li><a href="#creating-a-slideshow">Creating a slideshow</a></li>
+            
+            <li><a href="#adding-slideshow-items">Adding slideshow items</a></li>
+            
+            <li><a href="#adding-slideshows-to-a-page">Adding Slideshows to a page</a></li>
+            
+            <li><a href="#revolution-slider">Revolution Slider</a></li>
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#testimonials">Testimonials</a>
+        <ul class="nav">
+            
+            <li><a href="#adding-testimonials">Adding testimonials</a></li>
+            
+            <li><a href="#adding-testimonials-to-a-page">Adding testimonials to a page</a></li>
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#contact-page">Contact page</a>
+        <ul class="nav">
+            
+            <li><a href="#adding-a-contact-form">Adding a contact form</a></li>
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#setting-the-404-page">Setting the 404 page</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#one-page-version">One page version</a>
+        <ul class="nav">
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#color-swatches">Color swatches</a>
+        <ul class="nav">
+            
+            <li><a href="#default-swathes">Default swathes</a></li>
+            
+        </ul>
+    </li>
+    
+    <li>
+        <a href="#theme-options">Theme options</a>
+        <ul class="nav">
+            
+            <li><a href="#default-colours">Default colours</a></li>
+            
+            <li><a href="#flexslider">Flexslider</a></li>
+            
+            <li><a href="#woocommerce">Woocommerce</a></li>
+            
+        </ul>
+    </li>
+    
+</ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="bs-docs-section">
+                <h1 id="posts">Posts</h1>
+
+<h2 id="creating-posts">Creating posts</h2>
+<p>The Posts menu option on the left is where you add blog posts. To add a new blog post, select the <strong>Posts &gt; Add New</strong> option from the left hand WordPress menu.</p>
+
+<h2 id="post-types">Post types</h2>
+<p>When editing a blog post, below the <strong>Update</strong> button you can see the <strong>Format</strong> box. Pick one that suits the type of post you would like to present</p>
+
+<p><img alt="post" src="assets/images/post-types.png" /></p>
+
+<ol>
+  <li><strong>Standard:</strong> Used for text only (you may add featured image as well).</li>
+  <li><strong>Image:</strong>   Used for posts with a featured image.</li>
+  <li><strong>Gallery:</strong>  Used for posts with a gallery included. If you wish to add a gallery to your post, follow these steps
+    <ul>
+      <li>press the <strong>Add Media</strong> button above the editor</li>
+      <li>click on the <strong>Create Gallery</strong> option on the left-side menu</li>
+      <li>pick the images that you wish to add to the gallery by clicking on them</li>
+      <li>click on the <strong>Create a new gallery</strong> button</li>
+      <li>a tag with the ids of the images that you selected should now be inserted in the text</li>
+    </ul>
+  </li>
+  <li><strong>Video:</strong>    Used for posts with a video. If you wish to add a video to your post, add the embed tag with the video URL as content. For example,
+<strong>[embed]</strong>http://www.myurlvideo.com<strong>[/embed]</strong>.</li>
+  <li><strong>Link:</strong>    Used for posts that link to an external URL. Add the link tag with the link URL as content. For example,
+<strong>[link]</strong>http://www.mylink.com<strong>[/link]</strong>.</li>
+  <li><strong>Audio:</strong>   Used for posts with audio. If you wish to add audio to your post, add the audio tag with the source URL of the audio as content. For example,
+<strong>[audio src="http://www.myurlaudio.com"]</strong></li>
+  <li><strong>Quote:</strong>   Used for posting a quote. The name of the post will be the quote author. There is no single-post page for this post type.</li>
+</ol>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to use custom posts : <a href="http://www.youtube.com/watch?v=oMpgL8GUziE">post and post types video</a></p>
+
+<hr />
+
+<h2 id="blog-settings">Blog settings</h2>
+<p>Angle has loads of options about the set up of your blog pages. These options can be found in <strong>Angle&gt;Blog</strong>.</p>
+
+<p>To customize the blog pages headers the options are</p>
+
+<ul>
+  <li><strong>Show Header:</strong> Show or hide the header in all blog pages.</li>
+  <li><strong>Header Height:</strong> The height of header normal, short, tiny and no padding. <strong>Important Notice</strong> - When using height <strong>tiny</strong> or <strong>no padding</strong>, avoid using any Blog Decoration, because that might cause the decoration to overlap with the header's content.</li>
+  <li><strong>Title:</strong> The main title of the header in the blog pages</li>
+  <li><strong>Subtitle:</strong> The subtitle of the header in the blog pages</li>
+  <li><strong>Title Font Size:</strong> Choose size of the font for the title of the header</li>
+  <li><strong>Title Font Weight:</strong> Choose the font weight of the font for the title of the header. </li>
+  <li><strong>Title Alignment:</strong> The text alignment of the header</li>
+  <li><strong>Title Underline:</strong> Select if you want an underline in the header</li>
+  <li><strong>Background Image:</strong> Choose an image to use as background for the header</li>
+  <li><strong>Background Video:</strong> Choose a video to use as background for the header (url is needed)</li>
+  <li><strong>Overlay Colour:</strong> Select a color for a layer overlaying the background image or video</li>
+  <li><strong>Overlay Opacity:</strong> Select the opacity of the overlaying layer</li>
+  <li><strong>Overlay Grid:</strong>  Adds an overlay grid image in the overlay layer.</li>
+  <li><strong>Image Background Size:</strong> Select the size for the background image</li>
+  <li><strong>Image Background Repeat:</strong> Select how you want the background image to repeat</li>
+  <li><strong>Image Background Parallax:</strong> Select if fou want the background image to scroll or stay fixed</li>
+</ul>
+
+<p>To set up general blog options these are the options</p>
+
+<ul>
+  <li><strong>Blog Layout:</strong> Layout of your blog page. Choose right sidebar, left sidebar, fullwidth layout</li>
+  <li><strong>Post Icon:</strong> Toggle the appearance of post type icons in posts</li>
+  <li><strong>Show Comments On:</strong> Where to allow comments. All (show all), Pages (only on pages), Posts (only on posts), Off (all comments are off)</li>
+  <li><strong>Show Read More:</strong> Show or hide the "read more" link in list view</li>
+  <li><strong>Blog read more link:</strong> The text that will be used for your read more links</li>
+  <li><strong>Strip teaser:</strong> Strip the content before the &lt;–more–&gt; tag in single post view</li>
+  <li><strong>Pagination Style:</strong> Select the pagination type</li>
+</ul>
+
+<p>Settings for the single post page are</p>
+
+<ul>
+  <li><strong>Display categories:</strong> Toggle the appearance of the categories in the single post page</li>
+  <li><strong>Display tags:</strong> Toggle the appearance of the post tags</li>
+  <li><strong>Display comment count:</strong> Show the number of comments</li>
+  <li><strong>Show related posts:</strong> Show Related Posts in a slider after the post content</li>
+  <li><strong>Number of related posts:</strong> The total number of related posts</li>
+  <li><strong>Related posts per slide:</strong> The number of related post per slide</li>
+  <li><strong>Display avatar:</strong> Toggle avatars on/off in Author Bio Section</li>
+  <li><strong>Open Featured Image in Magnific Popup :</strong> Featured image in single post view will open in a large preview popup</li>
+</ul>
+
+<p>Finally you can select the colour swatches and the decorations for each part of your blog pages.</p>
+
+<p><img alt="blog swatches" src="assets/images/blog-swatches.png" /></p>
+
+<p>All the blog sections can be swatched. You can choose the colours of your blog header, posts, related posts and author bio.</p>
+
+<ul>
+  <li><strong>Header Swatch:</strong>  select the colour scheme to use for the header on this page.</li>
+  <li><strong>Blog Swatch:</strong>  choose a color swatch for the Blog page.</li>
+  <li><strong>Blog Decoration:</strong>  choose a style to use as the blog decoration.</li>
+  <li><strong>Related Posts Section Swatch:</strong> choose a color swatch for the related posts section below post content.</li>
+  <li><strong>Related Posts Decoration:</strong> choose a style to use as the Related Posts decoration.</li>
+  <li><strong>Related Posts Swatch:</strong> choose a color swatch for all the related posts below post content.</li>
+  <li><strong>Author Swatch:</strong>  choose a color swatch for the author bio section.</li>
+  <li><strong>Author Decoration:</strong>  choose a style to use as the Author's Page decoration.</li>
+  <li><strong>Search Result Swatch:</strong> choose a color swatch for the search result section.</li>
+  <li><strong>Search Result Decoration:</strong> choose a style to use as the search result page decoration.</li>
+</ul>
+
+<p>You can read more about the colour swatches <a href="#color-swatches">here</a></p>
+
+<h2 id="post-sharing">Post sharing</h2>
+<p>Angle gives you the option to add social sharing buttons to your posts.</p>
+
+<p><img alt="socialshare" src="assets/images/socialshare.png" /></p>
+
+<p>You can turn on or off these buttons in <strong>Angle&gt;Social</strong>.</p>
+
+<h1 id="pages">Pages</h1>
+
+<hr />
+
+<h2 id="creating-new-page">Creating new page</h2>
+<p>The Pages menu option on the left is where you add pages. To add a new page, select the <strong>Pages &gt; Add New</strong> option from the left hand WordPress menu.</p>
+
+<p>After typing your page's title you can select the page template and start adding your content (see following paragraphs).</p>
+
+<p>Angle comes bundled with <strong><a href="http://demo.wpbakery.com/?theme=visual-composer">Visual composer</a></strong>.  Visual Composer is the most famous drag and drop page builder. You can take full control over your WordPress site, build any layout you can imagine without any programming knowledge required.</p>
+
+<p><img alt="pages" src="assets/images/pages.png" /></p>
+
+<hr />
+
+<h2 id="adding-sections">Adding Sections</h2>
+<p>One of the most advanced features of Angle theme is the use of multiple <strong>page sections</strong>. Think of a section as a partial in your page that you can add any type of content:</p>
+
+<p><img alt="sections" src="assets/images/sections.jpg" /></p>
+
+<p>Each section can host its own content, a different decoration to separate them from other sections and even a different color swatch.</p>
+
+<p class="alert alert-danger">To use page sections with different colours and decorations, make sure that you have selected the <strong>default page template</strong> (full screen).</p>
+
+<p>Before adding content to a new page, make sure you have created a new row.
+Turn the <strong>Visual composer</strong> on by clicking on the button:
+<img alt="composer" src="assets/images/composer.png" /></p>
+
+<p>Then you can start adding content inside that row(section). Do that by pressing the blue button <strong>Visual Composer</strong>, that is located above the editor. Then press the <strong>Add row</strong> button.</p>
+
+<p>You have created an empty section. Before adding new elements to that section, try to edit it by clicking on the small pencil icon that is located on the upper right corner of the newly created row.
+<img alt="composer" src="assets/images/section.png" /></p>
+
+<p>A list of options should now appear</p>
+
+<p><img alt="section" src="assets/images/section-options.jpg" /></p>
+
+<ul>
+  <li><strong>Title:</strong>    Set the name of the section's title.</li>
+  <li><strong>Subtitle:</strong> Smaller subtitle to be shown under the main title text.</li>
+  <li><strong>Title Font Size:</strong>  Choose the size of the font to use in your header.</li>
+  <li><strong>Title Font Weight:</strong>    Choose the weight of the font to use in the title.  </li>
+  <li><strong>Title Alignment:</strong>  Align the header left, right or center.</li>
+  <li><strong>Title Underline:</strong>  Adds an underline effect below the title &amp; subtitle.</li>
+  <li><strong>Swatch:</strong>   Choose a color swatch for the section. On how to set color swatches, take a look at the <a href="#color-swatches">Color swatches</a> section.</li>
+  <li><strong>Top Decoration:</strong>   Choose a style to use as the top decoration. It is <strong>highly recommended</strong> that you use the top decoration option <strong>only</strong>, for every section that you create, in order to avoid overlapping decorations. In case you use <strong>media backgrounds</strong>(image or video), avoid using decorations completely in the current section. Should you want to add decorations to it anyway, do it by adding bottom decoration to the section before it and top decoration to the section after it.</li>
+  <li><strong>Bottom Decoration:</strong>   Choose a style to use as the bottom decoration.</li>
+  <li><strong>Section Height:</strong>   The height of header normal, short, tiny and no padding. <strong>Important Notice</strong> - When using height <strong>tiny</strong> or <strong>no padding</strong>, avoid using any <strong>Top Decoration</strong> on the following section, or any <strong>Bottom Decoration</strong> on the previous section, because that might cause the decorations to overlap with the section's content.</li>
+  <li><strong>Section Width:</strong>    Choose between padded or full width section. If you want to have the content of the section extending to the edge of the screen use the full width section.</li>
+  <li><strong>Background Image:</strong>  Click on the plus sign in the middle of the frame. Add an image from the <strong>Media Library</strong> or upload a new one. This image will appear as the background view of your section. Once added, you can see the preview icon in the options of the section. If you want to remove it, click on the <strong>x</strong> icon on the top right side of the image. You can only add one image background per section.</li>
+  <li><strong>Background Video:</strong> Enter the URL of the source of the video you want to use as background.</li>
+  <li><strong>Overlay Color:</strong>    Set the color of a layer that overlays the video &amp; image background.</li>
+  <li><strong>Overlay Opacity:</strong>  Set the opacity of the overlay layer.</li>
+  <li><strong>Overlay Grid:</strong>  Adds an overlay grid image in the overlay layer.</li>
+  <li><strong>Image Background Size:</strong>    Set how the image will fit into the section.</li>
+  <li><strong>Image Background Repeat:</strong>  Set how the image will be repeated.</li>
+  <li><strong>Image Background Parallax:</strong> Set the way the background scrolls with the page.
+    <ol>
+      <li>Scroll - Normal</li>
+      <li>Fixed - Applies the parallax effect on the background image</li>
+    </ol>
+  </li>
+</ul>
+
+<p class="alert alert-danger">In sections with  <strong>media backgrounds</strong>(image or video), avoid using decorations completely. Should you want to add decorations to it anyway, do it by adding bottom decoration to the section before it and top decoration to the section after it.</p>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to create page sections: <a href="http://www.youtube.com/watch?v=CORC9tq8364">adding page sections</a></p>
+
+<h3 id="section-decorations">Section decorations</h3>
+
+<p>What makes Angle unique as a theme and really amazing to interact with are the <strong>section decorations</strong>. The section decorations are small touches of design artwork, that make your pages stand out and catch the eye of the reader. Decorations are added to the top,bottom or both parts of each section. You can choose from 14 different kinds of decorations. All of them are created with svgs, which offer a much better quality than simple images, while supporting retina display devices. In addition, cross-browser compatibility is guarranteed. Svgs are also supported by IE8 and later.
+<img alt="logo" src="assets/images/decorations.png" /></p>
+
+<p>Adding a decoration to a section is an easy task. When editing a section,
+underneath the <strong>Swatch</strong> option you can see the <strong>Top Decoration</strong> and <strong>Bottom Decoration</strong> options, as shown in the image below.
+<img alt="logo" src="assets/images/decorations-options.png" /></p>
+
+<p>When you want to add a decoration between two sections with a different swatch,
+it is advisable to pick one of the <strong>left-slope</strong>,<strong>right-slope</strong>,<strong>arrow</strong>,<strong>circle</strong>,<strong>clouds</strong>,<strong>curtain</strong>,<strong>rounded</strong>,<strong>rounded-inverted</strong>,<strong>triangle</strong>,<strong>triangle-inverted</strong>,<strong>zig-zag</strong> or <strong>zipper</strong> decorations. On the other hand, when your sections have the same swatch, you would get a better effect if you chose one of the <strong>lines</strong> or <strong>cross</strong> decorations.</p>
+
+<p class="alert alert-danger">It is <strong>strongly recommended</strong> that you make sure no bottom decoration overlaps with any top decoration of the next section. In case you use <strong>media backgrounds</strong>(image or video), avoid using decorations completely in the current section. Should you want to add decorations to it anyway, do it by adding bottom decoration to the section before it and top decoration to the section after it.</p>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to set the section decorations: <a href="http://www.youtube.com/watch?v=oLOuCRgRUHQ">section decorations video</a></p>
+
+<hr />
+
+<h2 id="page-templates">Page templates</h2>
+<p>When editing a page, below the <strong>Update</strong> button you can see the <strong>Page Attributes</strong> box. From there you can pick the template that you want your page to be styled with. Choose <strong>Right Sidebar</strong> or <strong>Left Sidebar</strong>, if you have defined any widgets for the sidebar. If not, it is recommended to use the <strong>Default Template</strong>.</p>
+
+<p><img alt="page-template" src="assets/images/page-template.png" /></p>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to use the page templates : <a href="http://www.youtube.com/watch?v=s21eW02oKZc">page templates video</a></p>
+
+<p class="alert alert-info">If you want to use sections in your pages make sure that you select the <strong>Default template</strong></p>
+
+<hr />
+
+<h2 id="page-headers">Page Headers</h2>
+<p>Angle gives you the option to set your headers on a per page basis. Each page can have different header settings including  colours, font sizes etc. :
+<img alt="logo" src="assets/images/page-headers.png" /></p>
+
+<ul>
+  <li><strong>Show header:</strong>  Option to show or hide the page header</li>
+  <li><strong>Header Height:</strong>  The height of header normal, short, tiny and no padding. <strong>Important Notice</strong> - When using height <strong>tiny</strong> or <strong>no padding</strong>, avoid using <strong>top decoration</strong> on the following section, because that might cause the decoration to overlap with the header's content.</li>
+  <li><strong>Header Swatch:</strong>   Choose a color swatch for the header.</li>
+  <li><strong>Title:</strong>    Set the name of the headers's title.</li>
+  <li><strong>Subtitle:</strong> Smaller subtitle to be shown under the main title text.</li>
+  <li><strong>Title Font Size:</strong>  Choose the size of the font to use in your header.</li>
+  <li><strong>Title Font Weight:</strong>    Choose the weight of the font to use in the title. </li>
+  <li><strong>Title Alignment:</strong>  Align the header left, right or center.</li>
+  <li><strong>Title Underline:</strong>  Adds an underline effect below the title &amp; subtitle.</li>
+  <li><strong>Background Image:</strong>  Click on the plus sign in the middle of the frame. Add an image from the <strong>Media Library</strong> or upload a new one. This image will appear as the background view of your section. Once added, you can see the preview icon in the options of the section. If you want to remove it, click on the <strong>x</strong> icon on the top right side of the image. You can only add one image background per section.</li>
+  <li><strong>Background Video:</strong> Enter the URL of the source of the video you want to use as background.</li>
+  <li><strong>Overlay Color:</strong>    Set the color of a layer that overlays the video &amp; image background.</li>
+  <li><strong>Overlay Opacity:</strong>  Set the opacity of the overlay layer.</li>
+  <li><strong>Overlay Grid:</strong>  Adds an overlay grid image in the overlay layer.</li>
+  <li><strong>Image Background Size:</strong>    Set how the image will fit into the section.</li>
+  <li><strong>Image Background Repeat:</strong>  Set how the image will be repeated.</li>
+  <li><strong>Image Background Parallax:</strong> Set the way the background scrolls with the page.
+    <ol>
+      <li>Scroll - Normal</li>
+      <li>Fixed - Applies the parallax like effect on the background image</li>
+    </ol>
+  </li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to set up the page header : <a href="http://www.youtube.com/watch?v=MIbmwvjhvng">page headers</a></p>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> In this video you can see how to set the header's height : <a href="http://www.youtube.com/watch?v=h2MMUX2paCk">headers heights</a></p>
+
+<h2 id="page-overrides">Page Overrides</h2>
+<p>For more flexibility Angle gives you a set of options to override some general settings:</p>
+
+<p><img alt="page" src="assets/images/page-overides.png" /></p>
+
+<ul>
+  <li><strong>Show Top Navigation:</strong> Show or hide the site's top navigation (ideal for landing pages or specific pages like maintenance mode page).</li>
+  <li><strong>Override Top Navigation Swatch:</strong> Override the default site top nav swatch (only for this page). Use this options to set up the page decoration on pages using the left or right sidebar template.</li>
+  <li><strong>Override Footer Swatch:</strong> Override the default site footer swatch (only for this page).</li>
+</ul>
+
+<hr />
+
+<h1 id="portfolios">Portfolios</h1>
+
+<hr />
+
+<h2 id="adding-portfolio-items">Adding portfolio items</h2>
+<p>The Portfolio Items menu option on the left is where you add portfolio items. To add a new portfolio item, select the <strong>Portfolio Items &gt; Add New</strong> option from the left hand WordPress menu. The format of each portfolio item that you wish to create, follows the same rules as the post types. Take a look at the next section for more info.
+When you create a new portfolio item, you need to setup a few more options.
+<img alt="logo" src="assets/images/portfolio-item.png" /></p>
+
+<ul>
+  <li><strong>Excerpt:</strong>  The summary of your portfolio item's content that will be shown when you add it as content to your pages.</li>
+  <li><strong>Link Type:</strong> Your portfolio item can link to a
+    <ol>
+      <li><strong>Default Link:</strong>    the single portfolio page of the theme.</li>
+      <li><strong>Page:</strong> a page that you have created.</li>
+      <li><strong>Post:</strong>    a post that you have posted.</li>
+      <li><strong>Portfolio:</strong>   another portfolio item that you have created.</li>
+      <li><strong>Category:</strong> a category of posts.</li>
+      <li><strong>URL:</strong> an external URL.</li>
+    </ol>
+  </li>
+  <li><strong>Portfolio Swatch:</strong> Choose a color scheme for the portfolio item. On how to set color swatches, take a look at the <a href="#color-swatches">Color swatches</a> section.</li>
+  <li><strong>Portfolio Template:</strong>   Choose the template that you wish your single-portfolio page to be styled with
+    <ol>
+      <li><strong>Big Image:</strong>   Will add a full width header to the top of the page, which will contain the featured image, Header Title &amp; Description, with the skill list on the right side.</li>
+      <li><strong>Smaller Image:</strong>   Will create a header with a smaller image, Header Title, Description and link on the right side of the image.</li>
+      <li><strong>Fullwidth Page Template:</strong> Allows you to create your own page using sections, just like a regular full width page.</li>
+    </ol>
+  </li>
+  <li><strong>Top Navigation:</strong>   If <strong>On</strong>, navigation through the portfolio items is possible from the single-portfolio page.</li>
+  <li><strong>Small template side text:</strong> Text will appear in single portfolio small template on the right side of the page.</li>
+  <li><strong>External url:</strong> Link will appear in the single portfolio item underneath the skills list.</li>
+  <li><strong>Categories</strong>  The portfolio items can be grouped into categories.</li>
+  <li><strong>Features:</strong>  The items of the Features list that will appear on the right side of the template.</li>
+  <li><strong>Feature image</strong>  feature image of the portfolio item</li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to create portfolio items : <a href="http://www.youtube.com/watch?v=_lm_Yfb55nI">portfolio items video</a></p>
+
+<hr />
+
+<h2 id="portfolio-item-types">Portfolio item types</h2>
+<p>Angle supports the following three portfolio item types:</p>
+
+<ol>
+  <li><strong>Standard:</strong> Used for text only (you should add featured image as well. All portfolio items should have a feature image).</li>
+  <li><strong>Gallery:</strong>  Used for portfolio items with a gallery included. If you wish to add a gallery to your post, follow these steps
+    <ul>
+      <li>press the <strong>Add Media</strong> button above the editor</li>
+      <li>click on the <strong>Create Gallery</strong> option on the left-side menu</li>
+      <li>pick the images that you wish to add to the gallery by clicking on them</li>
+      <li>click on the <strong>Create a new gallery</strong> button</li>
+      <li>a tag with the ids of the images that you selected should now be inserted in the text</li>
+    </ul>
+  </li>
+  <li><strong>Video:</strong>    Used for posts with a video. If you wish to add a video to your post, add the embed tag with the video URL as content. For example,
+<strong>[embed]</strong>http://www.myurlvideo.com<strong>[/embed]</strong>. Youtube and vimeo video types are supported</li>
+</ol>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> The following videos will show you how to create different portfolio type items<br />
+  - <a href="http://www.youtube.com/watch?v=_lm_Yfb55nI">Standard portfolio item video</a><br />
+  - <a href="http://www.youtube.com/watch?v=l32P3AGiRNk">Gallery portfolio item video</a><br />
+  - <a href="http://www.youtube.com/watch?v=OIpo7DLxeYU">Video portfolio item video</a><br /></p>
+
+<h2 id="single-portfolio-item-templates">Single Portfolio item templates</h2>
+<p>Angle includes <strong>three</strong> different templates to use for your portfolio item single page:</p>
+
+<ul>
+  <li><strong>Big Image</strong> - Will add a full width header to the top of the page which will contain the featured image, Header Title &amp; Description with the skill list on the right side.</li>
+  <li><strong>Smaller Image</strong> - Will create a header with a smaller image and Header Title, Description and link on the right side of the image.</li>
+  <li><strong>Full Width Page</strong> - Allows you to create your own page using sections, just like a regular full width page.</li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to use the portfolio single item templates: <a href="http://www.youtube.com/watch?v=GGoKSnMyLhA">portfolio templates video</a></p>
+
+<h2 id="adding-portfolios-to-a-page">Adding portfolios to a page</h2>
+<p>If you wish to add a portfolio section to your page, once you have created an empty row, follow these steps</p>
+
+<ul>
+  <li>press the <strong>Add element</strong> button of the Visual Composer and choose the <strong>Portfolio</strong> element. Now you can edit the portfolio</li>
+</ul>
+
+<p><img alt="portfolio" src="assets/images/portfolio.png" /></p>
+
+<ul>
+  <li><strong>Category:</strong> the categories of the portfolios that you wish to be shown(to pick more than one, hold down the <strong>ctrl</strong> button while clicking on the categories).</li>
+  <li><strong>Number of portfolio items to display (per page if pagination is on ):</strong>  set the number of portfolio items to display(per page).</li>
+  <li><strong>Portfolio Columns:</strong> set the number of columns to show the portfolio in.</li>
+  <li><strong>Use pagination:</strong>   set option to <strong>Simple</strong> or <strong>Infinite</strong> if you want to split your portfolio items in pages.</li>
+  <li><strong>Shape:</strong>    choose the portfolio image shape.</li>
+  <li><strong>Shadow:</strong>   show or hide shadows.</li>
+  <li><strong>Show Title:</strong>   display the portfolio title.</li>
+  <li><strong>Show Excerpt:</strong> display the portfolio excerpt.</li>
+  <li><strong>Overlay:</strong>  show overlay on hover.</li>
+  <li><strong>Portfolio Filters:</strong>    show filter navigation.</li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to add a portfolio to a page : <a href="http://www.youtube.com/watch?v=RiiRrQJsKYo">adding portfolios to a page</a></p>
+
+<hr />
+
+<h2 id="general-portfolio-settings">General portfolio settings</h2>
+<p>The general settings for the portfolios can be found in <strong>Angle&gt;Portfolio</strong></p>
+
+<p><img alt="logo" src="assets/images/portfolio-options.png" /></p>
+
+<ul>
+  <li><strong>Show related items:</strong> Toggle the display of the related items section in the single portfolio pages.</li>
+  <li><strong>Related items title:</strong> Related items title that is shown on single portfolio page above releated items.</li>
+  <li><strong>Related items Swatch:</strong> Swatch color for the related items in single portfolio page.</li>
+  <li><strong>Related items Section Decoration:</strong> Decoration style for the related items section.</li>
+  <li><strong>Related items Shape:</strong> Shape for images for the related items in single portfolio page.</li>
+  <li><strong>Related items Shadow:</strong> Toggle the visibility of flat shadows for the related items.</li>
+  <li><strong>Image Width:</strong> Width of each portfolio item image (default 800px).</li>
+  <li><strong>Image Height:</strong> Height of each portfolio item image (default 600px).</li>
+  <li><strong>Image Cropping:</strong> Option to crop images to the exact proportions.</li>
+</ul>
+
+<h1 id="services">Services</h1>
+
+<hr />
+
+<h2 id="adding-services">Adding Services</h2>
+<p>The Services menu option on the left is where you add services. To add a new service, select the <strong>Services &gt; Add New</strong> option from the left hand WordPress menu. When you create a new service, you need to setup a few more options.
+<img alt="logo" src="assets/images/single-service.png" /></p>
+
+<ul>
+  <li><strong>Title and main content</strong> the main service title and content as it will appear in the single service page.</li>
+  <li><strong>Excerpt:</strong>  the summary of your service's content that will be shown in the services list when you add it as content to your pages.</li>
+  <li><strong>Show Header:</strong>  show or hide the header.</li>
+  <li><strong>Page Swatch:</strong>  select the colour scheme to use for this single-service page and sidebar. On how to set color swatches, take a look at the <a href="#color-swatches">Color swatches</a> section.</li>
+  <li><strong>Page Decoration:</strong>  choose a decoration to use at the top of the single service page.</li>
+  <li><strong>Image Type:</strong>   services can show
+    <ol>
+      <li><strong>Featured Image:</strong>  shows an uploaded image from the media library.</li>
+      <li><strong>Icon:</strong>    shows an icon.</li>
+      <li><strong>Featured Image &amp; Icon:</strong>   shows both.</li>
+      <li><strong>Nothing:</strong> no image or icon shown.</li>
+    </ol>
+  </li>
+  <li><strong>Icon:</strong> if you select Icon or Featured Image &amp; Icon Image Type, this is the icon that will be used.</li>
+  <li><strong>Icon Animation:</strong>   if you select Icon or Featured Image &amp; Icon Image Type, this is the animation that will be used when you hover over it.</li>
+  <li><strong>Service Page Template:</strong>    select a page template to use for this service.</li>
+  <li><strong>Categories:</strong>  Services can be grouped into categories.</li>
+  <li><strong>Feature image:</strong>  feature image of the service.</li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to create a new service : <a href="http://www.youtube.com/watch?v=GB7V2NmvJ_U">creating a new service video</a></p>
+
+<hr />
+
+<h2 id="adding-services-to-a-page">Adding services to a page</h2>
+<p>If you wish to add a services section to your page, once you have created an empty row, follow these steps</p>
+
+<ul>
+  <li>press the <strong>Add element</strong> button of the Visual Composer and choose the <strong>Services</strong> element. Now you can edit the services</li>
+</ul>
+
+<p><img alt="logo" src="assets/images/services.png" /></p>
+
+<ul>
+  <li><strong>Choose a category:</strong>    the category of the services that you wish to be shown.</li>
+  <li><strong>Services Count:</strong>   the number of services to show.</li>
+  <li><strong>Service Style:</strong>    services will be shown horizontallly or vertically on the page.</li>
+  <li><strong>Columns (horizontal style):</strong>   number of columns to show the services in.</li>
+  <li><strong>Image Shape:</strong>  the shape of the service's image.</li>
+  <li><strong>Shape Size:</strong>   the size of the service's shape.</li>
+  <li><strong>Shadow:</strong>   show or hide shadows.</li>
+  <li><strong>Show Connections:</strong> services will be connected with a dotted line.</li>
+  <li><strong>Show Titles:</strong>  show or hide the services' titles.</li>
+  <li><strong>Link Title:</strong>   linkable titles.</li>
+  <li><strong>Show Image:</strong>   show or hide the images.</li>
+  <li><strong>Link Image:</strong>   linkable images.</li>
+  <li><strong>Show Excerpt:</strong> show or hide the excerpts.</li>
+  <li><strong>Excerpt &amp; More Text Alignment:</strong> sets the text alignment of the excerpt text and the read more link.</li>
+  <li><strong>Show Readmore Link:</strong>   show or hide the readmore link.</li>
+  <li><strong>Readmore Link Text:</strong>   customize your readmore link.</li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to add a list of services to a page : <a href="http://www.youtube.com/watch?v=AXARV5v9bg4">adding a service to a page video</a></p>
+
+<hr />
+
+<h1 id="staff-members">Staff members</h1>
+
+<hr />
+
+<h2 id="adding-staff-members">Adding Staff members</h2>
+<p>The Staff menu option on the left is where you add staff members. To add a new staff member, select the <strong>Staff &gt; Add New</strong> option from the left hand WordPress menu. When you create a new staff member, you need to setup a few more options.
+<img alt="logo" src="assets/images/staff-member.png" /></p>
+
+<ul>
+  <li><strong>Title and main content:</strong> the main service title and content.</li>
+  <li><strong>Excerpt:</strong>  the summary of your staff member's content that will be shown when you add it as content to your pages.</li>
+  <li><strong>Link Type:</strong> same as <a href="#adding-portfolio-items">Portfolio Items</a>.</li>
+  <li><strong>Staff Detail Section Swatch:</strong>  select the color scheme to use for the top section in the detail page. On how to set color swatches, take a look at the <a href="#color-swatches">Color swatches</a> section.</li>
+  <li><strong>Job Title:</strong>    sub header that is shown below the staff members name.</li>
+  <li><strong>Personal Moto Title:</strong>  the cheeky title that pops up when a staff member image is hovered over.</li>
+  <li><strong>Personal Moto Text:</strong>   the cheeky text that pops up when a staff member image is hovered over.</li>
+  <li><strong>Social Icon 1:</strong>    social Network Icon to show for this Staff Member.</li>
+  <li>same for the rest of the social icons.</li>
+  <li><strong>Departments:</strong> staff members can be grouped in departments.</li>
+  <li><strong>Feature image:</strong>  feature image of the staff member.</li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to add a staff member : <a href="http://www.youtube.com/watch?v=lzukzZPRW80">adding a staff members video</a></p>
+
+<hr />
+
+<h2 id="adding-staff-members-to-a-page">Adding staff members to a page</h2>
+<p>If you wish to add a staff section to your page, once you have created an empty row, follow these steps</p>
+
+<ul>
+  <li>press the <strong>Add element</strong> button of the Visual Composer and choose the <strong>Staff List</strong> element. Now you can edit the staff list</li>
+</ul>
+
+<p><img alt="stafflist" src="assets/images/staff-list.png" /></p>
+
+<ul>
+  <li><strong>Choose a department:</strong>  populate your list from a department.</li>
+  <li><strong>Number of members:</strong>    number of members to display.</li>
+  <li><strong>List Columns:</strong> number of columns to show staff in.</li>
+  <li><strong>Image Shape:</strong>  the shape of the member's image.</li>
+  <li><strong>Shape Size:</strong>   the size of the member's shape.</li>
+  <li><strong>Shadow:</strong>   show or hide shadows.</li>
+  <li><strong>Link in name:</strong> make the name link to the url specified in staff page.</li>
+  <li><strong>Show Position:</strong>    display the staff position below the name.</li>
+  <li><strong>Show Excerpt:</strong> show or hide the excerpt.</li>
+  <li><strong>Excerpt &amp; More Text Alignment:</strong>    sets the text alignment of the excerpt text and the read more link.</li>
+  <li><strong>Show Social Links:</strong>   show or hide the social links.</li>
+  <li><strong>Open Social Links In:</strong> where the social links open to.</li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to add a list of staff members to a page : <a href="http://www.youtube.com/watch?v=XlFiVPKdwgE">adding staff members to a page video</a></p>
+
+<hr />
+
+<h2 id="adding-featured-staff-member-to-a-page">Adding featured staff member to a page</h2>
+<p>If you wish to add a staff section to your page, once you have created an empty row, follow these steps</p>
+
+<ul>
+  <li>press the <strong>Add element</strong> button of the Visual Composer and choose the <strong>Featured Staff member</strong> element. Now you can edit the Featured Staff member</li>
+</ul>
+
+<p><img alt="featured staff" src="assets/images/featured-staff.png" /></p>
+
+<ul>
+  <li><strong>Featured member:</strong>  select the staff member that will be featured.</li>
+  <li><strong>Image Shape:</strong>  the shape of the member's image.</li>
+  <li><strong>Shape Size:</strong>   the size of the member's shape.</li>
+  <li><strong>Shadow:</strong>   show or hide shadows.</li>
+  <li><strong>Show Position:</strong>    display the staff position below the name.</li>
+  <li><strong>Show Content:</strong> show or hide content.</li>
+  <li><strong>Content Font Size:</strong>    <strong>big</strong> or <strong>small</strong> font size.</li>
+  <li><strong>Content Alignment:</strong>    sets the text alignment of the excerpt text and the read more link.</li>
+  <li><strong>Show Social Links:</strong>   show or hide the social links.</li>
+  <li><strong>Open Social Links In:</strong> where the social links open to.</li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to add a featured staff member to a page : <a href="http://www.youtube.com/watch?v=weCi3s0ZxGY">adding featured staff member to a page video</a></p>
+
+<hr />
+
+<h1 id="slideshows">Slideshows</h1>
+
+<hr />
+
+<h2 id="creating-a-slideshow">Creating a slideshow</h2>
+<p>The Slider Images menu option on the left is where you create a Slideshow. To add a new Slideshow, select the <strong>Slider Images &gt; Slideshow</strong> option from the left hand WordPress menu. When you create a new Slideshow, you need to specify the <strong>Name</strong>, <strong>Slug</strong>, <strong>Parent</strong> and <strong>Description</strong> of the slideshow. Then, you can add Slider Images to it.</p>
+
+<hr />
+
+<h2 id="adding-slideshow-items">Adding slideshow items</h2>
+<p>The Slider Images menu option on the left is where you add Slider Images. To add a new Slider Image, select the <strong>Slider Images &gt; Add New</strong> option from the left hand WordPress menu. When you create a new Slider Image, you need to setup two more options.</p>
+
+<p><img alt="slideshow" src="assets/images/addslideshow.png" /></p>
+
+<ul>
+  <li><strong>Link Type:</strong> same as <a href="#adding-portfolio-items">Portfolio Items</a>.</li>
+  <li><strong>Slideshow Image:</strong>  set the featured image to be used as a slider image.</li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to create a slideshow : <a href="http://www.youtube.com/watch?v=HsUsPC1qH3g">creating a slideshow video</a></p>
+
+<hr />
+
+<h2 id="adding-slideshows-to-a-page">Adding Slideshows to a page</h2>
+<p>If you wish to add a slideshow to your page, once you have created an empty row, follow these steps</p>
+
+<ul>
+  <li>press the <strong>Add element</strong> button of the Visual Composer and choose the <strong>Slideshow</strong> element. Now you can edit the Slideshow</li>
+</ul>
+
+<p><img alt="slideshow" src="assets/images/slideshow.png" /></p>
+
+<ul>
+  <li><strong>Choose a Flexslider:</strong>  populate your slider with one of the slideshows you have created.</li>
+  <li><strong>Animation style:</strong>  select how your slider animates.</li>
+  <li><strong>Speed:</strong>    set the speed of the slideshow cycling, in milliseconds.</li>
+  <li><strong>Duration:</strong> set the speed of animations.</li>
+  <li><strong>Auto start:</strong>   start slideshow automatically.</li>
+  <li><strong>Show navigation arrows:</strong>   show or hide the navigation arrows.</li>
+  <li><strong>Navigation arrows type:</strong>   <strong>simple</strong> or <strong>fancy</strong> navigation arrows.</li>
+  <li><strong>Item width:</strong>   set the width of the slider items( leave blank for full ).</li>
+  <li><strong>Show controls:</strong>    show or hide the controls.</li>
+  <li><strong>Choose the place of the controls:</strong> <strong>Inside</strong> or <strong>Outside</strong> the slider images.</li>
+  <li><strong>Choose the alignment of the controls:</strong> sets the alignment of the controls.</li>
+  <li><strong>Show Captions:</strong>    show or hide the captions.</li>
+  <li><strong>Captions Vertical Position:</strong>   sets the vertical position of the captions.</li>
+  <li><strong>Captions Horizontal Position</strong>  sets the horizontal position of the captions.</li>
+  <li><strong>Show Tooltip:</strong> show or hide the tooltip.</li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to add a slideshow to a page: <a href="http://www.youtube.com/watch?v=Ah6fNF2FqDw">adding a slideshow to a page</a></p>
+
+<hr />
+
+<h2 id="revolution-slider">Revolution Slider</h2>
+<p>Angle uses <strong>Revolution Slider</strong>, it is also included in the theme.</p>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to add a revolution slider to a page: <a href="www.youtube.com/watch?v=bnRxDa7bqe0">adding a revolution slider to a page</a></p>
+
+<h1 id="testimonials">Testimonials</h1>
+
+<hr />
+
+<h2 id="adding-testimonials">Adding testimonials</h2>
+<p>The Testimonials menu option on the left is where you add testimonials. To add a new testimonial, select the <strong>Testimonials &gt; Add New</strong> option from the left hand WordPress menu. When you create a new testimonial, you need to setup one more option.</p>
+
+<p><img alt="testimonial" src="assets/images/testimonial.png" /></p>
+
+<ul>
+  <li><strong>Citation:</strong> reference to the source of the quote.</li>
+  <li><strong>Feature image:</strong> (optional) feature image for the testimonial.</li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to create a testimonial : <a href="http://www.youtube.com/watch?v=Zr_YH3wVBqM">creating testimonials video</a></p>
+
+<hr />
+
+<h2 id="adding-testimonials-to-a-page">Adding testimonials to a page</h2>
+<p>If you wish to add testimonials to your page, once you have created an empty row, follow these steps</p>
+
+<ul>
+  <li>press the <strong>Add element</strong> button of the Visual Composer and choose the <strong>Testimonials</strong> element. Now you can edit the Testimonials</li>
+</ul>
+
+<p><img alt="logo" src="assets/images/testimonial.png" /></p>
+
+<ul>
+  <li><strong>Choose a group:</strong>   group of testimonials to show.</li>
+  <li><strong>Number Of Testimonials:</strong>   number of Testimonials to display.</li>
+  <li><strong>Show avatars:</strong> display the featured image as avatar.</li>
+  <li><strong>Display as Slideshow:</strong> display the testimonials as a slideshow.</li>
+</ul>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to add testimonials to a page: <a href="http://www.youtube.com/watch?v=uuyxI44azEg">adding testimonials to a page</a></p>
+
+<hr />
+
+<h1 id="contact-page">Contact page</h1>
+
+<p>A contact page in Angle requires the <strong>Contact Form 7</strong> plugin to be activated, in order to be able to create a contact form. Make sure you have downloaded and installed the correct plugin from  <a href="http://wordpress.org/plugins/contact-form-7/">here</a>.</p>
+
+<h2 id="adding-a-contact-form">Adding a contact form</h2>
+<p>The Contact menu option on the left is where you add contact forms. To add a new contact form, select the <strong>Contact &gt; Add New</strong> option from the left hand WordPress menu. From the next screen press the blue <strong>Add New</strong> button if you want to use the default <strong>English</strong> language, or choose one from the dropdown menu and press the <strong>Add New</strong> button next to it.
+<img alt="logo" src="assets/images/contact-form.png" /></p>
+
+<p>When you get to the next page, paste the following code into the <strong>Form</strong> field, after you have set a name for the contact form in the <strong>Untitled</strong> field.</p>
+
+<pre><code>&lt;div class="form-group form-icon-group"&gt;
+      &lt;i class="fa fa-user"&gt;&lt;/i&gt; [text* your-name class:form-control placeholder "Your name *"]
+&lt;/div&gt;
+&lt;div class="form-group form-icon-group"&gt;
+    &lt;i class="fa fa-envelope" &gt; &lt;/i&gt; [email* your-email class:form-control placeholder"Your email *"]
+&lt;/div&gt;
+&lt;div class="form-group form-icon-group"&gt;
+      &lt;i class="fa fa-pencil"&gt;&lt;/i&gt; [textarea your-message class:form-control placeholder "Your message"]
+&lt;/div&gt;
+&lt;div class="text-center"&gt;
+[submit class:btn class:btn-primary"Send email"]
+ &lt;/div&gt;
+</code></pre>
+
+<p><img alt="logo" src="assets/images/form.png" /></p>
+
+<p>For the next options, in the <strong>Mail</strong> panel, fill the <strong>To:</strong> field with the email account that you want the emails to be redirected to. Every time the contact form gets filled by a user and sent, this email account will be receiving an email according to the format defined in the <strong>Mail</strong> panel. For the rest of the fields, you can leave the default values.
+<img alt="logo" src="assets/images/contact-mail.png" /></p>
+
+<p>Now press <strong>Save</strong>. As you can see in the image below, you should now have a shortcode to paste in your page's content, which will add the contact form you just created.
+<img alt="logo" src="assets/images/contact-save.png" /></p>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to create your contact page : <a href="http://www.youtube.com/watch?v=p69zQBG892Q">contact page video</a></p>
+
+<hr />
+
+<h1 id="setting-the-404-page">Setting the 404 page</h1>
+<p>In Angle theme you can even customize the appearance of the 404 page. To do that go to <strong>Angle&gt;404</strong> and set the options for that page:</p>
+
+<p><img alt="404" src="assets/images/404.png" /></p>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to set up your 404 page : <a href="http://www.youtube.com/watch?v=nj4wFQQWR04">404 page video</a></p>
+
+<hr />
+
+<h1 id="one-page-version">One page version</h1>
+<p>In angle theme is easy to create a <strong>one page template</strong> version. All you have to do is create sections and assign a unique id to each.</p>
+
+<p>After creating the sections add a menu using the section id's in the menu elements.</p>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to create a one page template : <a href="http://www.youtube.com/watch?v=WDfMWpBQn-4">one page version video</a></p>
+
+<hr />
+
+<h1 id="color-swatches">Color swatches</h1>
+<p>Creating a swatch is a way for the user to <strong>fully customize</strong> the look and feel of the website, while adding his personal touch with ease. Do not hesitate to create as many swatches as you can and play around with them, until you reach the desirable effect.
+The Swatches menu option on the left is where you add swatches.
+To add a new swatch, select the <strong>Swatches &gt; Add New</strong> option from the left hand WordPress menu. When you create a new swatch, you need to setup the swatch's colours.
+<img alt="logo" src="assets/images/swatches.png" /></p>
+
+<p>When you have set each component's color, one option that you have to set is the <strong>Overlay Color</strong> and <strong>Overlay Opacity</strong>.</p>
+
+<ul>
+  <li><strong>Overlay Color:</strong>   color used for overlays e.g. portfolio hover effect.</li>
+  <li><strong>Overlay Opacity:</strong>  how see through is the overlay in percentage.</li>
+</ul>
+
+<p>Now click on the <strong>Swatch Status</strong> option on the right side of the page, to enable the swatch. All enabled swatches are now ready to be applied to the frontend of your theme. All you have to do is choose them from the swatch options that appear throughout the theme option panels.</p>
+
+<p class="alert alert-success"><i class="fa fa-youtube-play"></i> Take a look at the video on how to create and use color swatches : <a href="http://www.youtube.com/watch?v=CLBeTtGZF7Q">color swatches video</a></p>
+
+<h2 id="default-swathes">Default swathes</h2>
+<p>Angle comes with a ready made set of default swatches. You can view all these swatces in the <strong>Swathes</strong> menu.</p>
+
+<p><img alt="swatch list" src="assets/images/swatch-list.png" /></p>
+
+<p>For each one you can see a preview of how it will look. You can edit, add new or delete existing swatches from the list. In order to use a color swatch you need to enable it. To do so, click on the swatch and select <strong>enable</strong> in the <strong>Swatch status</strong> box.</p>
+
+<p><img alt="swatch status" src="assets/images/swatch-status.png" /></p>
+
+<p>In case you need to restore the original swatches in your wordpress panel click on <strong>Angle&lt;Colours</strong> and click on the <strong>install defaults</strong> button</p>
+
+<p><img alt="swatch status" src="assets/images/swatch-defaults.png" /></p>
+
+<h1 id="theme-options">Theme options</h1>
+<p>Angle has even more options so that you can have the complete control over your webpages.</p>
+
+<h2 id="default-colours">Default colours</h2>
+<p>Here you can customize the colours for elements like the bootstrap button styles, portfolio hover colours, etc. The complete list of options include</p>
+
+<h3 id="button-colours">Button Colours</h3>
+<p>You can set up the text colour, background colour, hover background colour and icon button colours for each of the supported bootstrap <a href="http://getbootstrap.com/css/#buttons">button styles</a></p>
+
+<p><img alt="buttons" src="assets/images/buttons.png" /></p>
+
+<h3 id="overlay-colours">Overlay Colours</h3>
+<p>Set the colours used in overlay areas.</p>
+
+<p><img alt="overlay" src="assets/images/overlay.png" /></p>
+
+<h3 id="magnific-image-lightbox-colours">Magnific (image lightbox) Colours</h3>
+<p>Set the colours used in overlay when an image preview is clicked.</p>
+
+<p><img alt="magnific" src="assets/images/magnific.png" /></p>
+
+<h3 id="portfolio-hover-colours">Portfolio Hover Colours</h3>
+<p>Set the colours used in portfolios when you hover over an item.</p>
+
+<p><img alt="portfolio-colours" src="assets/images/portfolio-colours.png" /></p>
+
+<h3 id="go-to-top-button-colours">Go to top button Colours</h3>
+<p>Set the colours of the go to top button.  The go to top button will appear when you scroll down the page and allows users to navigate back to the top of the page.</p>
+
+<p><img alt="gotop" src="assets/images/gotop.png" /></p>
+
+<h2 id="flexslider">Flexslider</h2>
+<p>Here are the options that apply to the elements that use flexslider, like the gallery post types and portfolios.</p>
+
+<p><img alt="flexslider" src="assets/images/flexslider.png" /></p>
+
+<p>You can read more about <strong>flexslider</strong> <a href="http://flexslider.woothemes.com/">here</a></p>
+
+<h2 id="woocommerce">Woocommerce</h2>
+<p>The <strong>WooCommerce</strong> option on the left hand WordPress menu is where you set all the options of WooCommerce
+<img alt="woocommerce" src="assets/images/woocommerce.png" /></p>
+
+<hr />
+
+<h3 id="general-woocommerce-page-options">General WooCommerce Page Options</h3>
+<p>Change the look of your shop page with these options.</p>
+
+<ul>
+  <li><strong>General Shop Swatch:</strong>  choose a general color scheme to use for your WooCommerce site.</li>
+  <li><strong>General Shop Decoration:</strong>  choose a decoration style to use at the top of your shop pages.</li>
+</ul>
+
+<hr />
+
+<h3 id="shop-page">Shop Page</h3>
+<p>Change the look of your shop page with these options.</p>
+
+<ul>
+  <li><strong>Shop Layout:</strong>  layout of your shop page. Choose among right sidebar, left sidebar, fullwidth layout.</li>
+  <li><strong>Shop Page Columns:</strong>  number of columns to use for the products on the main shop page.</li>
+</ul>
+
+<hr />
+
+<h3 id="checkout-sidebar">Checkout Sidebar</h3>
+<p>Change the look of your shop page with these options.</p>
+
+<ul>
+  <li>
+    <p><strong>Checkout Slide Sidebar Swatch:</strong>  choose a color swatch for the cart that slides in from the side.
+## Advanced options
+Here you can find the advanced options for angle theme:</p>
+  </li>
+  <li><strong>CSS:</strong> Here you can save some custom CSS that will be loaded in the header. This will allow you to override some of the default styling of the theme.</li>
+  <li><strong>Site Fav Icon:</strong> Here you can set up the favicons for all different devices.</li>
+  <li><strong>Mobile:</strong> Here you can configure settings targeted at mobile devices. For now, the only option available is to turn off mobile videos, as that will consume a lot of bandwidth.</li>
+  <li><strong>Google Analytics:</strong> Set your Google Analytics Tracker and keep track of visitors to your site.</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        <footer class="docs-footer" role="contentinfo">
+    <div class="container">
+        <ul class="bs-masthead-links pull-left">
+            <li class="current-version">
+                Currently v1.1
+            </li>
+            <li>
+                <a href="changelog.html">Changelog</a>
+            </li>
+            <li>
+                <a href="http://themeforest.net/user/oxygenna/portfolio">Our Portfolio</a>
+            </li>
+            <li>
+                <a href="http://www.oxygenna.com/contact/">Contact Us</a>
+            </li>
+        </ul>
+        <ul class="bs-masthead-links pull-right">
+            <li>
+                Made with <i class="fa fa-heart"></i> in Sitia, Greece
+            </li>
+        </ul>
+    </li>
+</footer>
+    </body>
+</html>
