@@ -1,0 +1,6 @@
+# Robots.txt file from http://www.00015ek.rcomhost.com
+
+Sitemap: http://www.00015ek.rcomhost.com/sitemap.xml
+
+User-agent: *
+Disallow:

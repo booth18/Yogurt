@@ -1,0 +1,287 @@
+AWSTATS DATA FILE 6.7 (build 1.892)
+# If you remove this file, all statistics for date 201312 will be lost/reset.
+
+# Position (offset in bytes) in this file of beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1864                
+POS_TIME 2535                
+POS_VISITOR 6127                
+POS_DAY 6910                
+POS_DOMAIN 3107                
+POS_LOGIN 3333                
+POS_ROBOT 3488                
+POS_WORMS 3814                
+POS_EMAILSENDER 3945                
+POS_EMAILRECEIVER 4088                
+POS_SESSION 7319                
+POS_SIDER 7477                
+POS_FILETYPES 4223                
+POS_OS 4289                
+POS_BROWSER 4390                
+POS_SCREENSIZE 4624                
+POS_UNKNOWNREFERER 4698                
+POS_UNKNOWNREFERERBROWSER 4941                
+POS_ORIGIN 5040                
+POS_SEREFERRALS 5174                
+POS_PAGEREFS 5318                
+POS_SEARCHWORDS 5466                
+POS_KEYWORDS 5618                
+POS_MISC 2199                
+POS_ERRORS 5677                
+POS_CLUSTER 3189                
+POS_SIDER_404 5763                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20140101010011 1 0 8339969782178
+FirstTime 20131202042218
+LastTime 20131231211055
+LastUpdate 20140102030638 1 0 0 0 0
+TotalVisits 36                  
+TotalUnique 19                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 19                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 2 2 1172 0 0 0
+1 1 1 586 1 1 586
+2 3 3 1758 8 8 2880
+3 2 2 1172 0 0 0
+4 1 1 586 0 0 0
+5 1 1 586 2 2 720
+6 1 1 586 2 2 586
+7 0 0 0 0 0 0
+8 0 0 0 4 4 1440
+9 0 0 0 3 3 854
+10 2 2 1172 2 2 720
+11 1 1 586 3 3 1295
+12 6 6 2930 1 1 134
+13 2 2 1172 1 1 575
+14 1 1 586 2 2 1161
+15 0 0 0 6 6 2590
+16 2 2 1172 6 6 2160
+17 0 0 0 0 0 0
+18 1 1 586 6 6 2160
+19 2 2 1172 6 6 1708
+20 1 1 586 0 0 0
+21 4 4 2344 2 3 1295
+22 3 3 1758 7 7 1122
+23 2 2 1172 3 3 854
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 38 38 21682
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 6
+googlebot 39 14266 20131230160807 19
+surveybot 6 2160 20131231191001 3
+\wbot[\/\-] 6 988 20131230225604 3
+unknown 5 670 20131217234527 5
+java 2 586 20131202060837 0
+crawl 2 720 20131223100105 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 1
+html 38 21682 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 6
+winlong 2
+winxp 4
+win2003 3
+winnt 14
+Unknown 14
+linuxubuntu 1
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 14
+msie6.0 1
+mozilla 13
+firefox25.0 1
+firefox3.0.6 1
+msie7.0 5
+firefox16.0 1
+firefox10.0.1 1
+firefox18.0 2
+firefox2.0.0.16 1
+msie5.5 1
+Unknown 1
+firefox15.0.1 1
+safari 8
+firefox3.6.23 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 3
+- 20131208214049
+Mozilla/4.0_(compatible) 20131231211055
+Mozilla/4.0_(compatible;_http://search.thunderstone.com/texis/websearch/about.html) 20131203223658
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+- 20131208214049
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 25 25
+From1 0 0
+From2 0 0
+From3 0 0
+From4 13 13
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 1
+404 6 3450
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 3
+/wp-login.php 4 -
+/blog/ 1 -
+/apple-touch-icon.png 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 19
+23.239.196.71 6 6 3516 20131231211055
+198.101.238.203 4 4 2344 20131222213330
+184.22.42.196 3 3 1758 20131216023500
+184.22.40.189 3 3 1758 20131224121256
+192.237.216.89 3 3 1758 20131223024948
+205.178.190.234 3 3 1172 20131215123103
+192.95.22.19 2 2 1172 20131203002718
+38.229.70.44 2 2 1172 20131208055244
+192.96.204.42 2 2 1172 20131224121956
+192.99.9.228 1 1 586 20131215065456
+206.183.1.74 1 1 586 20131203223658
+62.149.133.73 1 1 586 20131208214049
+46.4.48.68 1 1 586 20131218133527
+38.100.21.64 1 1 586 20131220015331
+38.99.82.209 1 1 586 20131217195051
+193.105.210.174 1 1 586 20131217234526
+198.100.150.90 1 1 586 20131209143237
+38.99.82.208 1 1 586 20131217194251
+168.62.179.39 1 1 586 20131215102256
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 18
+20131202 1 1 586 1
+20131203 2 2 1172 2
+20131204 2 2 1172 2
+20131206 2 2 1172 2
+20131207 3 3 1758 3
+20131208 2 2 1172 2
+20131209 4 4 2344 4
+20131214 1 1 586 1
+20131215 5 5 2344 3
+20131216 1 1 586 1
+20131217 4 4 2344 4
+20131218 1 1 586 1
+20131220 1 1 586 1
+20131222 4 4 2344 4
+20131223 1 1 586 1
+20131224 2 2 1172 2
+20131226 1 1 586 1
+20131231 1 1 586 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 2
+5mn-15mn 1
+0s-30s 35
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 1
+/ 38 21682 36 36
+END_SIDER
